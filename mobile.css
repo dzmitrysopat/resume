@@ -1,0 +1,400 @@
+/* 992px 768px  576px 350px*/  
+
+
+@media screen and (max-width: 600px){
+    main{
+        margin: 50px 25px;
+        gap: 100px;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    header{
+        padding: 2%;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        width: 95vw;
+    }
+
+    .dark header{
+        border-top: 2px solid #505050;
+    }
+
+    nav > a,
+    .anchor{
+        display: none;
+    }
+
+    nav{
+        gap: 20px;
+    }
+
+    .uil-apps{
+        display: block !important;
+        position: absolute;
+        right: 13% !important;
+        bottom: 15% !important;
+        z-index: 5;
+    }
+
+    .burger-menu{
+        display: grid !important;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    #home{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    #home > #links { grid-area: 1 / 1 / 2 / 2; }
+    #home > #information { grid-area: 2 / 1 / 3 / 3; }
+    #home > img { grid-area: 1 / 2 / 2 / 3;
+    max-width: 75vw;
+    }
+
+    a.btn{
+        padding: 5px 10px;
+        width: 100%;
+    }
+
+    div.btns > a:nth-child(2){
+        display: flex;
+    }
+
+    div.btns > a:nth-child(odd){
+        display: none;
+    }
+
+    .about{
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a.card{
+        width: auto;
+        padding: 10px;
+    }
+
+    .description{
+        width: auto;
+    }
+
+    .about > .container > a.btn{
+        width: 100%;
+    }
+
+    #double{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #skills > section > div.parent-card{
+        padding: 10px 0;
+    }
+
+    #double > #services > section > .parent-card{
+        padding: 15px;
+    }
+
+    .qualification-container{
+        grid-row-gap: 130px;
+    }
+
+    section.qualification-container:nth-child(4),
+    section.qualification-container:nth-child(5){
+    grid-row-gap: 0px !important;
+    }
+
+    .swiper{
+        width: 90vw;
+    }
+
+    .case{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .case > img{
+        max-width: 85vw;
+    }
+
+    .case > .description{
+        max-width: 85vw;
+    }
+
+    a.btn{
+        max-width: 85vw;
+    }
+
+    #contact > section.container{
+        flex-wrap: wrap-reverse;
+        gap: 0;
+    }
+
+    section.container > div.parent-card:first-child{
+        align-self: stretch;
+        border: none;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: inherit;
+    }
+
+    section.container > div.parent-card:first-child > h3,
+    section.container > div.parent-card:first-child > a.card > div.skill-item > div.skill-description{
+        display: none;
+    }
+
+    section.container > div.parent-card:first-child > a.card {
+        background-color: inherit;
+        width: auto;
+        padding: 0;
+        border: none;
+    }
+
+    div.swiper-button-next,
+    div.swiper-button-prev{
+        display: none;
+    }
+
+    div#progress{
+        display: none !important;
+    }
+
+    #contact > .container > .parent-card:nth-child(2){
+        padding: 25px 30px;
+    }
+
+    input, textarea{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 992px){
+    main{
+        margin: 50px 25px 100px 25px;
+        gap: 100px;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    header{
+        padding: 2%;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        width: 95vw;
+    }
+
+    .dark header{
+        border-top: 2px solid #505050;
+    }
+
+    nav > a,
+    .anchor{
+        display: none;
+    }
+
+    nav{
+        gap: 20px;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .uil-apps{
+        display: block !important;
+        position: absolute;
+        right: 8%;
+        bottom: 25%;
+        z-index: 5;
+    }
+
+    .burger-menu{
+        display: grid !important;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    #home{
+        display: grid;
+        /* grid-template-columns: 1fr; */
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home > #links { 
+        grid-area: 3 / 1 / 4 / 2; 
+        flex-direction: row; 
+        margin-top: 25px; 
+        justify-self: center;
+    }
+    #home > #information { grid-area: 2 / 1 / 3 / 2; }
+    #home > img { grid-area: 1 / 1 / 2 / 2;
+    max-width: 75vw; align-self: center;
+    }
+
+
+    a.btn{
+        padding: 5px 10px;
+        width: 100%;
+    }
+
+    /* div.btns > a.white-btn{
+        display: none;
+    } */
+
+    div.btns > a:nth-child(2){
+        display: flex;
+    }
+
+    div.btns > a:nth-child(odd){
+        display: none;
+    }
+
+    .about{
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a.card{
+        width: auto;
+        padding: 10px;
+    }
+
+    .description{
+        width: auto;
+    }
+
+    .about > .container > a.btn{
+        width: 100%;
+    }
+
+    #double{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #skills > section > div.parent-card{
+        padding: 10px 0;
+    }
+
+    #double > #services > section > .parent-card{
+        padding: 15px;
+    }
+
+    .qualification-container{
+        grid-row-gap: 130px;
+    }
+
+    section.qualification-container:nth-child(4),
+    section.qualification-container:nth-child(5){
+    grid-row-gap: 40px;
+    }
+
+    .swiper{
+        width: 90vw;
+    }
+
+    .case{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .case > img{
+        max-width: 85vw;
+    }
+
+    .case > .description{
+        max-width: 85vw;
+    }
+
+    a.btn{
+        max-width: 85vw;
+    }
+
+    #contact > section.container{
+        flex-wrap: wrap-reverse;
+        gap: 0;
+    }
+
+    section.container > div.parent-card:first-child{
+        align-self: stretch;
+        border: none;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: inherit;
+    }
+
+    section.container > div.parent-card:first-child > h3{
+        display: none;
+    }
+
+
+    div.swiper-button-next,
+    div.swiper-button-prev{
+        display: none;
+    }
+
+    div#progress{
+        display: none !important;
+    }
+
+    input, textarea{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .about{
+        flex-wrap: wrap;
+        gap: 25px;
+        align-self: center;
+    }
+
+    .swiper{
+        width: 90vw;
+    }
+
+    .case{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .case > img{
+        max-width: 85vw;
+    }
+
+    .case > .description{
+        max-width: 85vw;
+    }
+}
