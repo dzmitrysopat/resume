@@ -701,6 +701,10 @@ button[type=submit],
     border-radius: 10px;
 }
 
+option[value=zero]{
+    display: none;
+}
+
 .case > a.btn{
     width: 99%;
     padding: 0;
