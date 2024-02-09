@@ -354,7 +354,7 @@
                 </div> -->
                 <div class="parent-card container">
                     
-                    <form method="post">
+                    <form method="post" action="https://formsubmit.co/dzmitrysopat@gmail.com" >
                         <section class="common-information" id="commonInfo">
                             <div class="block-name">
                                 <img src="./img/human.svg" alt="" class="icon">
@@ -365,9 +365,9 @@
                                 <input type="text" name="name" id="name" placeholder="Как Вас зовут" reqired>
                                 <label for="birth">Дата рождения</label>
                                 <input type="date" name="birth" id="birth" placeholder="Как Вас зовут" reqired>
-                                <label for="birth">Гражданство</label>
-                                <input type="text" name="city" id="city" placeholder="Ваша национальность" reqired>
-                                <label for="birth">Город проживания</label>
+                                <label for="country">Гражданство</label>
+                                <input type="text" name="country" id="country" placeholder="Ваша национальность" reqired>
+                                <label for="city">Город проживания</label>
                                 <input type="text" name="city" id="city" placeholder="Ваш город" reqired>
                                 <label for="birth">Семейное положение</label>
                                 <select required>
@@ -376,7 +376,7 @@
                                     <option value="second">Замужем/Женат</option>
                                 </select>
                                 <label for="photo">Ваша фотография</label>
-                                <input type="file" name="" id="">
+                                <input type="file" name="photo" id="photo">
                             </article>     
                             <a href="#" class="btn next" id="step2" onclick="showStep2()">Далее</a>                      
                         </section>
@@ -392,7 +392,7 @@
                                 <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" reqired>
                                 <label for="Email">Электронная почта</label>
                                 <input type="email" name="email" id="Email" placeholder="Ваша эл.почта" reqired>
-                                <label for="Social">Социальные сети</label>
+                                <label for="telegram">Социальные сети</label>
                                 <input type="url" name="telegram" id="telegram" placeholder="Telegram">
                                 <input type="url" name="instagram" id="instagram" placeholder="Instagram">
                                 
@@ -413,25 +413,25 @@
                                     <option value="second">Среднее специальное</option>
                                 </select>
                                 <label for="college">Наименование учебного заведения</label>
-                                <input type="text" name="name" id="name" placeholder="ГГТУ, БелГУТ" reqired>
+                                <input type="text" name="college" id="college" placeholder="ГГТУ, БелГУТ" reqired>
                                 <label for="educationType">Форма обучения</label>
                                 <select required id="educationType">
                                     <option value="zero" selected disabled>Выберите из списка</option>
                                     <option value="first">Очная</option>
                                     <option value="second">Заочная</option>
                                 </select>
-                                <label for="college">Факультет</label>
-                                <input type="text" name="name" id="name" placeholder="" reqired>
-                                <label for="college">Кафедра</label>
-                                <input type="text" name="name" id="name" placeholder="ГГТУ, БелГУТ" reqired>
-                                <label for="college">Ваша специальность</label>
-                                <input type="text" name="name" id="name" placeholder="" reqired>
-                                <label for="college">Год поступления</label>
-                                <input type="number" min="2010" max="2020" step="1" value="2013" />
-                                <label for="college">Год окончания</label>
-                                <input type="number" min="2010" max="2028" step="1" value="2013" />
-                                <label for="college">Тема дипломной/выпускной работы</label>
-                                <input type="text" name="name" id="name" placeholder="Ваш дипломный проект" reqired>
+                                <label for="faculty">Факультет</label>
+                                <input type="text" name="faculty" id="faculty" placeholder="" reqired>
+                                <label for="cafedre">Кафедра</label>
+                                <input type="text" name="cafedre" id="cafedre" placeholder="Электроснабжение" reqired>
+                                <label for="qualify">Ваша специальность</label>
+                                <input type="text" name="qualify" id="qualify" placeholder="Электроснабжение" reqired>
+                                <label for="startYear">Год поступления</label>
+                                <input type="number" min="2010" max="2020" step="1" value="2013" id="startYear" />
+                                <label for="finalYear">Год окончания</label>
+                                <input type="number" id="finalYear" min="2010" max="2028" step="1" value="2013" />
+                                <label for="diploma">Тема дипломной/выпускной работы</label>
+                                <input type="text" name="diploma" id="diploma" placeholder="Ваш дипломный проект" reqired>
                             </article> 
                             <a href="#" class="btn next" id="step4" onclick="showStep4()">Осталась пара вопросов</a>                          
                         </section>
@@ -442,21 +442,21 @@
                                 <h3>Прочая информация</h3>
                             </div>
                             <article class="information">
-                                <label for="name">Принадлежность к общественному объединению</label>
-                                <input type="text" name="name" id="name" placeholder="БРСМ, Белая Русь и т.д." reqired>
-                                <label for="name">Какими языками владеете?</label>
-                                <input type="text" name="name" id="name" placeholder="Английский, Испанский и т.д" reqired>
-                                <label for="name">Расскажите о своих достижениях</label>
-                                <textarea name="" id="" placeholder="дипломах, сертификатах, поощрениях, участии в олимпиадах, конкурсах, студенческих организациях и т.д."></textarea>                                
-                                <label for="name"> Хотите рассказать о себе что-то еще?</label>
-                                <textarea name="" id="" placeholder="Интересы, хобби и увлечения, спортивные достижения и т.д."></textarea>                         
+                                <label for="community">Принадлежность к общественному объединению</label>
+                                <input type="text" name="community" id="community" placeholder="БРСМ, Белая Русь и т.д." reqired>
+                                <label for="langs">Какими языками владеете?</label>
+                                <input type="text" name="langs" id="langs" placeholder="Английский, Испанский и т.д" reqired>
+                                <label for="wins">Расскажите о своих достижениях</label>
+                                <textarea name="wins" id="wins" placeholder="дипломах, сертификатах, поощрениях, участии в олимпиадах, конкурсах, студенческих организациях и т.д."></textarea>                                
+                                <label for="about"> Хотите рассказать о себе что-то еще?</label>
+                                <textarea name="about" id="about" placeholder="Интересы, хобби и увлечения, спортивные достижения и т.д."></textarea>                         
                                 
-                            </article>     
+                            </article>   
+                            <input type="hidden" name="_captcha" value="false">
+                            <!-- <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/Portfolio/">   -->
                             <button class="btn" type="submit">Send Message<i class="uil uil-message"></i></button>
                         </section>
                         
-                        
-
                     </form>
                 </div>
             </section>

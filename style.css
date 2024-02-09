@@ -22,7 +22,9 @@ body{
     max-width: 1400px;
     overflow-x: hidden;
     flex-direction: column;
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 25%, rgba(182,182,182,1) 57%, rgba(0,70,115,1) 100%);
 }
 
 .body_hide {
@@ -447,11 +449,17 @@ section.container > .btn{
     gap: 25px;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    border: 2px solid #ddd;
+    background-color: #ffffff00;
+    border: 3px solid #ddd;
     border-radius: 10px;
     align-items: center;
     padding: 25px 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);}
 }
 
 
@@ -668,10 +676,20 @@ div.parent-card > form > section > div > h3{
     border-bottom: 2px solid #ddd;
 }
 
+
 form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background-color: #001a2e00;
+}
+
+.common-information{
+    border: none;
+}
+
+form > section{
+    background: rgba(255, 255, 255, 0);
 }
 
 label{
