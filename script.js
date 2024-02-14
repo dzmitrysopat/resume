@@ -14,7 +14,20 @@ function showStep4(){
   document.getElementById("OtherInfo").classList.remove("hidden");
 }
 
+// previous
+function showStep1(){
+  document.getElementById("commonInfo").classList.remove("hidden");
+  document.getElementById("contactInfo").classList.add("hidden");
+}
 
+function backStep2(){
+  document.getElementById("contactInfo").classList.remove("hidden");
+  document.getElementById("EducationInfo").classList.add("hidden");
+}
+
+function backStep3(){
+  document.getElementById("EducationInfo").classList.remove("hidden");
+  document.getElementById("OtherInfo").classList.add("hidden");}
 
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");

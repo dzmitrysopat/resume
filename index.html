@@ -83,7 +83,7 @@
                                 </select>
                                 <label for="photo">Ваша фотография</label>
                                 <input type="file" name="photo" id="photo">
-                            </article>     
+                            </article>  
                             <a href="#" class="btn next" id="step2" onclick="showStep2()">Далее</a>                      
                         </section>
                         
@@ -96,13 +96,14 @@
                             <article class="information">
                                 <label for="phone">Мобильный телефон</label>
                                 <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" reqired>
-                                <label for="email">Электронная почта</label>
+                                <label for="email">Электроннаяx`почта</label>
                                 <input type="email" name="email" id="email" placeholder="Ваша эл.почта" reqired>
                                 <label for="telegram">Мессенджеры</label>
                                 <input type="text" name="telegram" id="telegram" placeholder="Telegram">
                                 <label for="instagram">Соц.сети</label>
                                 <input type="text" name="instagram" id="instagram" placeholder="Instagram">
                             </article> 
+                            <a href="#" class="btn next" id="step1" onclick="showStep1()">Назад</a>  
                             <a href="#" class="btn next" id="step3" onclick="showStep3()">Далее</a>                          
                         </section>
 
@@ -138,7 +139,8 @@
                                 <input type="number" id="finalYear" min="2010" max="2028" step="1" value="2013" />
                                 <label for="diploma">Тема дипломной/выпускной работы</label>
                                 <input type="text" name="diploma" id="diploma" placeholder="Ваш дипломный проект" reqired>
-                            </article> 
+                            </article>
+                            <a href="#" class="btn next" id="back2" onclick="backStep2()">Назад</a>   
                             <a href="#" class="btn next" id="step4" onclick="showStep4()">Осталась пара вопросов</a>                          
                         </section>
 
@@ -159,7 +161,9 @@
                                 
                             </article>   
                             <input type="hidden" name="_captcha" value="false">
+                            
                             <!-- <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/Portfolio/">   -->
+                            <a href="#" class="btn next" id="back3" onclick="backStep3()">Назад</a>   
                             <button class="btn" type="submit">Send Message<i class="uil uil-message"></i></button>
                         </section>
                         
