@@ -9,32 +9,14 @@
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" id="favicon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
 </head>
 <body class="">
     <header id="header" class="header">
         <a href="./index.html" id="logo" class="logo"><img src="/img/logo.png" class="logo-img" id="logoImg" alt="">Совет молодёжи</a>
-        <!-- <nav id="navigation" class="navigation"> -->
-            <!-- <a href="#home-anchor" class="nav-link active-link">Home</a>
-            <a href="#about-anchor" class="nav-link">About</a>
-            <a href="#double-anchor" class="nav-link">Skills</a>
-            <a href="#qualification-anchor" class="nav-link">Qualification</a>
-            <a href="#portfolio-anchor" class="nav-link">Portfolio</a>
-            <a href="#contact-anchor" class="nav-link">Contact</a> -->
-            <!-- <i class="uil uil-moon theme"></i> -->
-            <!-- <i class="uil uil-apps"></i> -->
-            <!-- <div id="menu">
-                <a href="#home" class="mob-link active-link" onclick="burgerNav()"><i class="uil uil-estate"></i>Home</a>
-                <a href="#about" class="mob-link" onclick="burgerNav()"><i class="uil uil-user"></i>About</a>
-                <a href="#double" class="mob-link" onclick="burgerNav()"><i class="uil uil-graph-bar"></i>Skills</a>
-                <a href="#qualification" class="mob-link" onclick="burgerNav()"><i class="uil uil-graduation-cap"></i>Qualification</a>
-                <a href="#portfolio" class="mob-link" onclick="burgerNav()"><i class="uil uil-bag-alt"></i>Portfolio</a>
-                <a href="#contact" class="mob-link" onclick="burgerNav()"><i class="uil uil-message"></i>Contact</a>
-                <i class="uil uil-times" id="close"></i>
-            </div> -->
         </nav>
     </header>
     <main id="main" class="main">
@@ -93,11 +75,11 @@
                                 <input type="text" name="country" id="country" placeholder="Ваша национальность" reqired>
                                 <label for="city">Город проживания</label>
                                 <input type="text" name="city" id="city" placeholder="Ваш город" reqired>
-                                <label for="birth">Семейное положение</label>
-                                <select required>
+                                <label for="family">Семейное положение</label>
+                                <select id="family" name="family" required>
                                     <option value="zero" selected disabled>Выберите из списка</option>
-                                    <option value="first">Холост/Свободна</option>
-                                    <option value="second">Замужем/Женат</option>
+                                    <option value="Холост/Свободна">Холост/Свободна</option>
+                                    <option value="Замужем/Женат">Замужем/Женат</option>
                                 </select>
                                 <label for="photo">Ваша фотография</label>
                                 <input type="file" name="photo" id="photo">
@@ -114,12 +96,12 @@
                             <article class="information">
                                 <label for="phone">Мобильный телефон</label>
                                 <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" reqired>
-                                <label for="Email">Электронная почта</label>
-                                <input type="email" name="email" id="Email" placeholder="Ваша эл.почта" reqired>
-                                <label for="telegram">Социальные сети</label>
-                                <input type="url" name="telegram" id="telegram" placeholder="Telegram">
-                                <input type="url" name="instagram" id="instagram" placeholder="Instagram">
-                                
+                                <label for="email">Электронная почта</label>
+                                <input type="email" name="email" id="email" placeholder="Ваша эл.почта" reqired>
+                                <label for="telegram">Мессенджеры</label>
+                                <input type="text" name="telegram" id="telegram" placeholder="Telegram">
+                                <label for="instagram">Соц.сети</label>
+                                <input type="text" name="instagram" id="instagram" placeholder="Instagram">
                             </article> 
                             <a href="#" class="btn next" id="step3" onclick="showStep3()">Далее</a>                          
                         </section>
@@ -197,6 +179,6 @@
 
     
     <script src="./script.js"></script>
-    <script src="./theme.js"></script>
+    <!-- <script src="./theme.js"></script> -->
 </body>
 </html>
