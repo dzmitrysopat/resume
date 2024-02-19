@@ -27,6 +27,48 @@ body{
 background: linear-gradient(90deg, rgba(131,58,180,1) 25%, rgba(182,182,182,1) 57%, rgba(0,70,115,1) 100%);
 }
 
+.custom-shape-divider-top-1708346947 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1708346947 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1708346947 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.custom-shape-divider-bottom-1708347393 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1708347393 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1708347393 .shape-fill {
+    fill: #17598f;
+}
+
 .body_hide {
 	opacity: 0;
 	transition: 2s opacity ease-in-out;
