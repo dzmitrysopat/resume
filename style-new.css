@@ -20,7 +20,7 @@ body{
     /* max-width: 1400px; */
     overflow-x: hidden;
     flex-direction: column;
-    background-color: #fafafa;
+    background-color: rgb(31, 192, 241);
     /* background: rgb(131,58,180); */
 /* background: linear-gradient(90deg, rgba(131,58,180,1) 25%, rgba(182,182,182,1) 57%, rgba(0,70,115,1) 100%); */
 }
