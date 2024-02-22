@@ -92,7 +92,7 @@
                                 <label for="photo">Ваша фотография</label>
                                 <input type="file" name="photo" id="photo">
                             </article>  
-                            <a href="#" class="btn next" id="step2" onclick="showStep2()">Далее</a>                      
+                            <a href="#" class="btn next" id="step2" onclick="showStep2()">Далее<i class='bx bx-right-arrow-alt' ></i></a>                      
                         </section>
                         
 
@@ -111,8 +111,10 @@
                                 <label for="instagram">Соц.сети</label>
                                 <input type="text" name="instagram" id="instagram" placeholder="Instagram">
                             </article> 
-                            <a href="#" class="btn next" id="step1" onclick="showStep1()">Назад</a>  
-                            <a href="#" class="btn next" id="step3" onclick="showStep3()">Далее</a>                          
+                            <article class="buttons">
+                                <a href="#" class="btn next" id="step1" onclick="showStep1()"><i class='bx bx-arrow-back'></i>Назад</a>  
+                                <a href="#" class="btn next" id="step3" onclick="showStep3()">Далее<i class='bx bx-right-arrow-alt' ></i></a>                              
+                            </article>
                         </section>
 
                         <section class="common-information hidden" id="EducationInfo">
@@ -148,8 +150,10 @@
                                 <label for="diploma">Тема дипломной/выпускной работы</label>
                                 <input type="text" name="diploma" id="diploma" placeholder="Ваш дипломный проект" reqired>
                             </article>
-                            <a href="#" class="btn next" id="back2" onclick="backStep2()">Назад</a>   
-                            <a href="#" class="btn next" id="step4" onclick="showStep4()">Осталась пара вопросов</a>                          
+                            <article class="buttons">
+                                <a href="#" class="btn next" id="back2" onclick="backStep2()"><box-icon name='arrow-back'></box-icon>Назад</a>   
+                                <a href="#" class="btn next" id="step4" onclick="showStep4()">Осталась пара вопросов<i class='bx bx-right-arrow-alt' ></i></a>                              
+                            </article>
                         </section>
 
                         <section class="common-information hidden" id="OtherInfo">
@@ -172,8 +176,10 @@
                             
                             <input type="hidden" name="_template" value="table">
                             <!-- <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/Portfolio/">   -->
-                            <a href="#" class="btn next" id="back3" onclick="backStep3()">Назад</a>   
-                            <button class="btn" type="submit">Send Message<i class="uil uil-message"></i></button>
+                            <article class="buttons">
+                                <a href="#" class="btn next" id="back3" onclick="backStep3()"><box-icon name='arrow-back' class="back"></box-icon>Назад</a>   
+                                <button class="btn" type="submit">Send Message<i class="uil uil-message"></i></button>    
+                            </article>
                         </section>
                         
                     </form>
