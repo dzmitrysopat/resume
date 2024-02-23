@@ -20,25 +20,30 @@ body{
     max-width: 1400px;
     overflow-x: hidden;
     flex-direction: column;
-    background-color: #e2e2e2;
-    /* background: rgb(131,58,180); */
-/* background: linear-gradient(90deg, rgba(131,58,180,1) 25%, rgba(182,182,182,1) 57%, rgba(0,70,115,1) 100%); */
+    background-color: #fafafa;
 }
 
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid #383838;
-    border-radius: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
     padding: 15px;
+    background-color: #fff;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 100;
+    border-bottom: 2px solid #ddd;
 }
 
 article.buttons > a,
 article.buttons > button{
     border: 2px solid #383838;
     border-radius: 5px;
-    padding: 0 15px;
+    padding: 5px 25px;
     color: #fff;
     background-color: #383838;
     font-size: 18px;
@@ -49,4 +54,13 @@ article.buttons > a:hover,
 article.buttons > button:hover{
     color: #383838;
     background-color: #e2e2e2;
+}
+
+article.block-info{
+    display: flex;
+    flex-direction: column;
+}
+
+option:nth-child(1){
+    display: none;
 }
