@@ -6,6 +6,13 @@
     <title>Анкета специлаиста</title>
     <link rel="stylesheet" href="./style-new.css">
     <link rel="shortcut icon" href="./img/icons8-check-120.png" type="image/x-icon">
+    <!-- Include Bootstrap CSS and JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+
 </head>
 <body>
     <ul>
@@ -16,22 +23,28 @@
     </ul>
     <form action="" method="post">
     <section class="common-info block">
+
         <article class="block-name">
             <h2>Основная информация</h2>
         </article>
+
         <article class="block-info">
             <label for="name">Фамилия Имя Отчество</label>
             <input type="text" name="name" id="name">
+
             <label for="birth">Дата рождения</label>
             <input type="date" name="birth" id="birth">
+
             <label for="family">Семейное положение</label>
             <select name="family" id="family">
                 <option value="zero" selected disabled>Выберите из списка</option>
                 <option value="Замужем/Женат">Замужем/Женат</option>
                 <option value="Холост/Свободна">Холост/Свободна</option>
             </select>
+
             <label for="country">Гражданство</label>
             <input type="text" name="country" id="country">
+
             <label for="city">Город проживания</label>
             <input type="text" name="city" id="city">
         </article>
@@ -45,46 +58,72 @@
         <article class="block-name">
             <h2>Контактная информация</h2>
         </article>
-        <article class="block-info">
-            <label for=""></label>
-            
-            <label for=""></label>
-            
-            <label for=""></label>
-            
-            <label for=""></label>
 
-            
+        <article class="block-info">
+            <label for="tel">Мобильный телефон</label>
+            <input type="tel" name="tel" id="tel">
+
+            <label for="email">Электртонная почта</label>
+            <input type="email" name="email" id="email">
+
+            <label for="telegram">Telegram</label>
+            <input type="text" name="telegram" id="telegram">
+
+            <label for="instagram">Instagram</label>
+            <input type="text" name="instagram" id="instagram">
+
+            <label for="photo">Фотография</label>
+            <input type="file" name="photo" id="photo">
         </article>
+
         <article class="buttons">
             <a href="#" class="prev-btn">Назад</a>
             <a href="#" class="next-btn">Далее</a>
         </article>
     </section>
+
     <section class="education-info block">
         <article class="block-name">
-            <h2>Образование<h2>
+            <h2>Образование</h2>
         </article>
+
         <article class="block-info">
-            <label for=""></label>
+            <label for="college">Наименование учебного заведения</label>
+            <input type="text" name="college" id="college">
+
+            <label for="education">Уровень образования</label>
+            <select name="education" id="education">
+                <option value="zero" selected disabled>Выберите из списка</option>
+                <option value="Высшее">Высшее</option>
+                <option value="Среднее специальное">Среднее специальное</option>
+            </select>
+
+            <label for="educationType">Форма обучения (очная/заочная)</label>
+            <select name="educationType" id="educationType">
+                <option value="zero" selected disabled>Выберите из списка</option>
+                <option value="Очная">Заочная</option>
+                <option value="Заочная">Заочная</option>
+            </select>
+
+            <label for="faculty">Факультет</label>
+            <input type="text" name="faculty" id="faculty">
+
+            <label for="cafedre">Кафедра</label>
+            <input type="text" name="cafedre" id="cafedre">
+
+            <label for="speciality">Специальность</label>
+            <input type="text" name="speciality" id="speciality">
+
+            <label for="startYear">Год поступления</label>
+            <input class="date-own form-control" type="text" name="startYear" id="startYear">
+
+            <label for="finishYear">Год окончания</label>
+            <input class="date-own form-control" type="text" name="finishYear" id="finishYear">
             
-            <label for=""></label>
-            
-            <label for=""></label>
-            
-            <label for=""></label>
-            
-            <label for=""></label>
-            
-            <label for=""></label>
-            
-            <label for=""></label>
-            
-            <label for=""></label>
-            
-            <label for=""></label>
-            
-            <label for=""></label>
+            <label for="">Средний балл по успеваемости</label>
+            <input type="text" name="" id="">
+
+            <label for="">Тема выпускной (дипломной) работы</label>
 
             
         </article>
@@ -112,7 +151,7 @@
             
             <label for=""></label>
 
-            
+            <input type="checkbox" name="agree" id="agree">
         </article>
         <article class="buttons">
             <a href="#" class="prev-btn">Назад</a>
@@ -120,5 +159,12 @@
         </article>
     </section>
 </form>
+
+<script>
+      $('.date-own').datepicker({
+         minViewMode: 2,
+         format: 'yyyy'
+       });
+</script>
 </body>
 </html>

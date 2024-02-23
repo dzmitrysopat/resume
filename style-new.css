@@ -15,9 +15,10 @@ html {
 
 body{
     display: flex;
+    align-items: center;
     flex: 1;
     margin: 0 auto;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     overflow-x: hidden;
     flex-direction: column;
     background-color: #fafafa;
@@ -31,6 +32,12 @@ form{
     border-radius: 5px;
     padding: 15px;
     background-color: #fff;
+}
+
+section.block{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 h2{
@@ -59,8 +66,21 @@ article.buttons > button:hover{
 article.block-info{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 option:nth-child(1){
     display: none;
+}
+
+.ui-datepicker-calendar {
+    display: none;
+}
+
+.date-own{
+    width: 300px;height: 450px;
+}
+
+span.active{
+    background-color: #383838 !important;
 }
