@@ -15,15 +15,14 @@
 
 </head>
 <body>
-    <ul>
+    <ol>
         <li>Основная информация</li>
         <li>Контактная информация</li>
         <li>Образование</li>
         <li>Прочая информация</li>
-    </ul>
+    </ol>
     <form action="" method="post">
-    <section class="common-info block">
-
+    <section class="common-info block" id="commonInfo">
         <article class="block-name">
             <h2>Основная информация</h2>
         </article>
@@ -50,11 +49,11 @@
         </article>
 
         <article class="buttons">
-            <a href="#" class="next-btn">Далее</a>
+            <a href="#" class="next-btn" onclick="nextStep2()">Далее</a>
         </article>
     </section>
 
-    <section class="contact-info block">
+    <section class="contact-info block hidden" id="contactInfo">
         <article class="block-name">
             <h2>Контактная информация</h2>
         </article>
@@ -77,12 +76,12 @@
         </article>
 
         <article class="buttons">
-            <a href="#" class="prev-btn">Назад</a>
-            <a href="#" class="next-btn">Далее</a>
+            <a href="#" class="prev-btn" onclick="prevStep1()">Назад</a>
+            <a href="#" class="next-btn" onclick="nextStep3()">Далее</a>
         </article>
     </section>
 
-    <section class="education-info block">
+    <section class="education-info block hidden" id="educationInfo">
         <article class="block-name">
             <h2>Образование</h2>
         </article>
@@ -128,11 +127,11 @@
             
         </article>
         <article class="buttons">
-            <a href="#" class="prev-btn">Назад</a>
-            <a href="#" class="next-btn">Далее</a>
+            <a href="#" class="prev-btn" onclick="prevStep2()">Назад</a>
+            <a href="#" class="next-btn" onclick="nextStep4()">Далее</a>
         </article>
         </section>
-    <section class="other-info block">
+    <section class="other-info block hidden" id="otherInfo">
         <article class="block-name">
             <h2>Прочая информация</h2>
         </article>
@@ -161,8 +160,8 @@
             <label for="agree">Я даю согласие на обработку моих персональных данных</label>
         </article>
         <article class="buttons">
-            <a href="#" class="prev-btn">Назад</a>
-            <button href="#" class="next-btn">Отправить</button>
+            <a href="#" class="prev-btn" onclick="prevStep3()">Назад</a>
+            <button type="submit" class="next-btn">Отправить</button>
         </article>
     </section>
 </form>
@@ -173,5 +172,6 @@
          format: 'yyyy'
        });
 </script>
+<script src="script-new.js"></script>
 </body>
 </html>
