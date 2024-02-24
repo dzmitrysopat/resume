@@ -22,6 +22,7 @@ body{
     overflow-x: hidden;
     flex-direction: column;
     background-color: #fafafa;
+    background: url('./img/wallhaven-exrqrr.jpg');
 }
 
 .hidden{
