@@ -31,7 +31,7 @@ body{
 ol{
     display: flex;
     align-items: center;
-    /* gap: 25px; */
+    gap: 25px;
 }
 
 li{
@@ -54,9 +54,10 @@ div.line{
     height: 5px;
     background-color: inherit;
     border: 1px solid #383838;
+    display: none;
 }
 
-div.step{
+div.active{
     background-color: #383838;
 }
 
