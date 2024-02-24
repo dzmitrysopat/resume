@@ -16,10 +16,10 @@
 </head>
 <body>
     <ol>
-        <li>Основная информация</li>
-        <li>Контактная информация</li>
-        <li>Образование</li>
-        <li>Прочая информация</li>
+        <li class="active" id="firstBlock">Основная информация</li>
+        <li class="" id="secondBlock">Контактная информация</li>
+        <li class="" id="thirdBlock">Образование</li>
+        <li class="" id="lastBlock">Прочая информация</li>
     </ol>
     <form action="" method="post">
     <section class="common-info block" id="commonInfo">
@@ -100,7 +100,7 @@
             <label for="educationType">Форма обучения (очная/заочная)</label>
             <select name="educationType" id="educationType">
                 <option value="zero" selected disabled>Выберите из списка</option>
-                <option value="Очная">Заочная</option>
+                <option value="Очная">Очная</option>
                 <option value="Заочная">Заочная</option>
             </select>
 
@@ -119,11 +119,11 @@
             <label for="finishYear">Год окончания</label>
             <input class="date-own form-control" type="text" name="finishYear" id="finishYear">
             
-            <label for="">Средний балл по успеваемости</label>
-            <input type="text" name="" id="">
+            <label for="point">Средний балл по успеваемости</label>
+            <input type="text" name="point" id="point">
 
-            <label for="">Тема выпускной (дипломной) работы</label>
-
+            <label for="diploma">Тема выпускной (дипломной) работы</label>
+            <input type="text" name="diploma" id="dipoloma">
             
         </article>
         <article class="buttons">
@@ -137,7 +137,8 @@
         </article>
         <article class="block-info">
             <label for="">Принадлежность к общественному объединению</label>
-            
+            <input type="text" name="" id="">
+
             <label for="">Какими языками владеете?</label>
             <input type="text" name="" id="">
 
