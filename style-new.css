@@ -22,7 +22,7 @@ body{
     overflow-x: hidden;
     flex-direction: column;
     background-color: #fafafa;
-    background: url('./img/wallhaven-exrqrr.jpg');
+    background: url('./img/wallhaven-exrqrr.jpg') no-repeat center;
 }
 
 .hidden{
@@ -66,17 +66,22 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid #ddd;
-    border-radius: 5px;
+    /* border: 2px solid #ddd; */
+    /* border-radius: 5px; */
     padding: 15px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    /* background-color: #fff; */
 }
 
 section.block{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin: 15px 50px;
+    margin: 15px 30px;
 }
 
 h2{
@@ -100,7 +105,7 @@ article.buttons > button{
 article.buttons > a:hover,
 article.buttons > button:hover{
     color: #383838;
-    background-color: #fff;
+    background-color: inherit;
     text-decoration: none;
 }
 
@@ -116,9 +121,10 @@ option:nth-child(1){
 
 input, select, option, textarea, input.form-control{
     padding: 15px;
-    width: 30vw;
+    width: 50vw;
     border-radius: 8px;
-    border: 2px solid #ddd;
+    border: 2px solid #dddddd72;
+    background-color: inherit;
 }
 
 .ui-datepicker-calendar {
