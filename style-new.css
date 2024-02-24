@@ -30,7 +30,15 @@ body{
 
 ol{
     display: flex;
-    gap: 25px;
+    align-items: center;
+    /* gap: 25px; */
+}
+
+li{
+    border: 2px solid #383838;
+    list-style-position: inside;
+    padding: 5px 18px;
+    border-radius: 5px;
 }
 
 li.active{
@@ -39,6 +47,17 @@ li.active{
     color: #fff;
     list-style-position: inside;
     border-radius: 5px;
+}
+
+div.line{
+    width: 50px;
+    height: 5px;
+    background-color: inherit;
+    border: 1px solid #383838;
+}
+
+div.step{
+    background-color: #383838;
 }
 
 form{
