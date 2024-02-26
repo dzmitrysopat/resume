@@ -1,3 +1,6 @@
+
+
+
 function nextStep2(){
     document.getElementById("commonInfo").classList.add("hidden");
     document.getElementById("contactInfo").classList.remove("hidden");
@@ -10,10 +13,12 @@ function nextStep3(){
     document.getElementById("educationInfo").classList.remove("hidden");
     document.getElementById("secondBlock").classList.remove("active");
     document.getElementById("thirdBlock").classList.add("active");
-
 }
 
 function nextStep4(){
+    const startYear = document.getElementById("startYear").value;
+    // let value = startYear.value;
+    console.log(startYear);
     document.getElementById("educationInfo").classList.add("hidden");
     document.getElementById("otherInfo").classList.remove("hidden");
     document.getElementById("thirdBlock").classList.remove("active");
