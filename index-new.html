@@ -107,11 +107,11 @@
         </article>
 
         <article class="block-info">
-            <div class="block-info">
+            <div class="input-block">
                 <label for="college">Наименование учебного заведения</label>
                 <input type="text" name="college" id="college" required>
             </div>
-            <div class="block-info">
+            <div class="input-block">
                 <label for="education">Уровень образования</label>
             <select name="education" id="education" required>
                 <option value="zero" selected disabled>Выберите из списка</option>
@@ -120,7 +120,7 @@
             </select>
             </div>
 
-            <div class="block-info">
+            <div class="input-block">
                 <label for="educationType">Форма обучения (очная/заочная)</label>
             <select name="educationType" id="educationType" required>
                 <option value="zero" selected disabled>Выберите из списка</option>
@@ -129,25 +129,25 @@
             </select>
             </div>
 
-            <div class="block-info">
+            <div class="input-block">
                 <label for="faculty">Факультет</label>
             <input type="text" name="faculty" id="faculty">
             </div>
 
-            <div class="block-info">
+            <div class="input-block">
                 <label for="cafedre">Кафедра</label>
                 <input type="text" name="cafedre" id="cafedre">
             </div>
 
-            <div class="block-info">
+            <div class="input-block">
                 <label for="speciality">Специальность</label>
                 <input type="text" name="speciality" id="speciality">
             </div>
-            <div class="block-info">
+            <div class="input-block">
                 <div class="years-block">
                     <div class="input-block">
-                        <label for="input-blockYear">Год поступления</label>
-                        <input class="date-own form-control" type="text" name="input-blockYear" id="input-blockYear">
+                        <label for="startYear">Год поступления</label>
+                        <input class="date-own form-control" type="text" name="startYear" id="startYear">
                     </div>
     
                     <div class="finish">
@@ -156,51 +156,68 @@
                     </div>
                 </div>
             </div>
-            <div class="block-info">
+            <div class="input-block">
                 <label for="point">Средний балл по успеваемости</label>
             <input type="text" name="point" id="point">
             </div>            
 
-            
-
-            <label for="diploma">Тема выпускной (дипломной) работы</label>
-            <input type="text" name="diploma" id="dipoloma">
-            
+            <div class="input-block">
+                <label for="diploma">Тема выпускной (дипломной) работы</label>
+                <input type="text" name="diploma" id="dipoloma">
+            </div>    
         </article>
+
         <article class="buttons">
             <a href="#" class="prev-btn button" onclick="prevStep2()">Назад</a>
             <a href="#" class="next-btn button" onclick="nextStep4()">Далее</a>
         </article>
         </section>
+
     <section class="other-info block hidden" id="otherInfo">
         <article class="block-name">
             <h2>Прочая информация</h2>
         </article>
         <article class="block-info">
-            <label for="Hogwarts">Принадлежность к общественному объединению</label>
-            <input type="text" name="Hogwarts" id="Hogwarts">
+            <div class="input-block">
+                <label for="Hogwarts">Принадлежность к общественному объединению</label>
+                <input type="text" name="Hogwarts" id="Hogwarts">    
+            </div>
 
-            <label for="languages">Какими языками владеете?</label>
-            <input type="text" name="languages" id="languages">
+            <div class="input-block">
+                <label for="languages">Какими языками владеете?</label>
+                <input type="text" name="languages" id="languages">
+            </div>
 
-            <label for="interestings">Чем Вас заинтересовало участие в проекте?</label>
-            <textarea name="interestings" id="interesting"></textarea>
+            <div class="input-block">
+                <label for="interestings">Чем Вас заинтересовало участие в проекте?</label>
+                <textarea name="interestings" id="interesting"></textarea>
+            </div>
 
-            <label for="skills">Какие Ваши навыки и умения позволят добиться успеха в рамках проекта?</label>
-            <input type="text" name="skills" id="skills">
+            <div class="input-block">
+                <label for="skills">Какие Ваши навыки и умения позволят добиться успеха в рамках проекта?</label>
+                <input type="text" name="skills" id="skills">
+            </div>
+            <div class="input-block">
+                <label for="publications">Чему посвящены Ваши учебные проекты и/или научные публикации?</label>
+                <textarea name="publications" id="publications"></textarea>
+            </div>
 
-            <label for="publications">Чему посвящены Ваши учебные проекты и/или научные публикации?</label>
-            <textarea name="publications" id="publications"></textarea>
+            <div class="input-block"> 
+                <label for="achievements">Расскажите о своих достижениях</label>
+                <textarea name="achievements" id="achievements"></textarea>
+            </div>
 
-            <label for="achievements">Расскажите о своих достижениях</label>
-            <textarea name="achievements" id="achievements"></textarea>
+            <div class="input-block">
+                <label for="about">Хотите рассказать о себе что-то еще? </label>
+                <textarea name="about" id="about"></textarea>
+            </div>
 
-            <label for="about">Хотите рассказать о себе что-то еще? </label>
-            <textarea name="about" id="about"></textarea>
-
-            <input type="checkbox" name="agree" id="agree">
-            <label for="agree">Я даю согласие на обработку моих персональных данных</label>
+            <div class="input-block">
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">Я даю согласие на обработку моих персональных данных</label>    
+            </div>            
         </article>
+
         <article class="buttons">
             <a href="#" class="prev-btn button" onclick="prevStep3()">Назад</a>
             <button type="submit" class="next-btn button">Отправить</button>
