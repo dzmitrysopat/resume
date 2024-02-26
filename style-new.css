@@ -145,3 +145,8 @@ input.form-control{
 input[type=checkbox]{
     width: fit-content;
 }
+
+select > option{
+    font-size: 18px;
+    border-radius: 15px;
+}
