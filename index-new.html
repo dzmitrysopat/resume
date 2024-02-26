@@ -33,23 +33,23 @@
 
         <article class="block-info">
             <label for="name">Фамилия Имя Отчество</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
 
             <label for="birth">Дата рождения</label>
-            <input type="date" name="birth" id="birth">
+            <input type="date" name="birth" id="birth" required>
 
             <label for="family">Семейное положение</label>
-            <select name="family" id="family">
+            <select name="family" id="family" required>
                 <option value="zero" selected disabled>Выберите из списка</option>
                 <option value="Замужем/Женат">Замужем/Женат</option>
                 <option value="Холост/Свободна">Холост/Свободна</option>
             </select>
 
             <label for="country">Гражданство</label>
-            <input type="text" name="country" id="country">
+            <input type="text" name="country" id="country" required>
 
             <label for="city">Город проживания</label>
-            <input type="text" name="city" id="city">
+            <input type="text" name="city" id="city" required>
         </article>
 
         <article class="buttons">
@@ -64,16 +64,16 @@
 
         <article class="block-info">
             <label for="tel">Мобильный телефон</label>
-            <input type="tel" name="tel" id="tel">
+            <input type="tel" name="tel" id="tel" required>
 
             <label for="email">Электртонная почта</label>
             <input type="email" name="email" id="email">
 
             <label for="telegram">Telegram</label>
-            <input type="text" name="telegram" id="telegram">
+            <input type="text" name="telegram" id="telegram" required>
 
             <label for="instagram">Instagram</label>
-            <input type="text" name="instagram" id="instagram">
+            <input type="text" name="instagram" id="instagram" required>
 
             <label for="photo">Фотография</label>
             <input type="file" name="photo" id="photo">
@@ -92,17 +92,17 @@
 
         <article class="block-info">
             <label for="college">Наименование учебного заведения</label>
-            <input type="text" name="college" id="college">
+            <input type="text" name="college" id="college" required>
 
             <label for="education">Уровень образования</label>
-            <select name="education" id="education">
+            <select name="education" id="education" required>
                 <option value="zero" selected disabled>Выберите из списка</option>
                 <option value="Высшее">Высшее</option>
                 <option value="Среднее специальное">Среднее специальное</option>
             </select>
 
             <label for="educationType">Форма обучения (очная/заочная)</label>
-            <select name="educationType" id="educationType">
+            <select name="educationType" id="educationType" required>
                 <option value="zero" selected disabled>Выберите из списка</option>
                 <option value="Очная">Очная</option>
                 <option value="Заочная">Заочная</option>
@@ -140,26 +140,26 @@
             <h2>Прочая информация</h2>
         </article>
         <article class="block-info">
-            <label for="">Принадлежность к общественному объединению</label>
-            <input type="text" name="" id="">
+            <label for="Hogwarts">Принадлежность к общественному объединению</label>
+            <input type="text" name="Hogwarts" id="Hogwarts">
 
-            <label for="">Какими языками владеете?</label>
-            <input type="text" name="" id="">
+            <label for="languages">Какими языками владеете?</label>
+            <input type="text" name="languages" id="languages">
 
-            <label for="">Чем Вас заинтересовало участие в проекте?</label>
-            <textarea name="" id=""></textarea>
+            <label for="interestings">Чем Вас заинтересовало участие в проекте?</label>
+            <textarea name="interestings" id="interesting"></textarea>
 
-            <label for="">Какие Ваши навыки и умения позволят добиться успеха в рамках проекта?</label>
-            <input type="text" name="" id="">
+            <label for="skills">Какие Ваши навыки и умения позволят добиться успеха в рамках проекта?</label>
+            <input type="text" name="skills" id="skills">
 
-            <label for="">Чему посвящены Ваши учебные проекты и/или научные публикации?</label>
-            <textarea name="" id=""></textarea>
+            <label for="publications">Чему посвящены Ваши учебные проекты и/или научные публикации?</label>
+            <textarea name="publications" id="publications"></textarea>
 
-            <label for="">Расскажите о своих достижениях</label>
-            <textarea name="" id=""></textarea>
+            <label for="achievements">Расскажите о своих достижениях</label>
+            <textarea name="achievements" id="achievements"></textarea>
 
-            <label for="">Хотите рассказать о себе что-то еще? </label>
-            <textarea name="" id=""></textarea>
+            <label for="about">Хотите рассказать о себе что-то еще? </label>
+            <textarea name="about" id="about"></textarea>
 
             <input type="checkbox" name="agree" id="agree">
             <label for="agree">Я даю согласие на обработку моих персональных данных</label>
