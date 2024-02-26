@@ -15,44 +15,51 @@
 </head>
 
 <body>
+    <ol>
+        <li class="active" id="firstBlock">Основое</li>
+        <li class="" id="secondBlock">Контакы</li>
+        <li class="" id="thirdBlock">Образование</li>
+        <li class="" id="lastBlock">Прочее</li>
+    </ol>
     <form action="" method="post">
-        <ol>
-            <li class="active" id="firstBlock">Основое</li>
-            <div class="line active"></div>
-            <li class="" id="secondBlock">Контакы</li>
-            <div class="line"></div>
-            <li class="" id="thirdBlock">Образование</li>
-            <div class="line"></div>
-            <li class="" id="lastBlock">Прочее</li>
-        </ol>
     <section class="common-info block" id="commonInfo">
         <article class="block-name">
             <h2>Основная информация</h2>
         </article>
 
         <article class="block-info">
-            <label for="name">Фамилия Имя Отчество</label>
-            <input type="text" name="name" id="name" required>
+            <div class="input-block">
+                <label for="name">Фамилия Имя Отчество</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+           
+            <div class="input-block">
+                <label for="birth">Дата рождения</label>
+                <input type="date" name="birth" id="birth" required>
+            </div>
 
-            <label for="birth">Дата рождения</label>
-            <input type="date" name="birth" id="birth" required>
+            <div class="input-block">
+                <label for="family">Семейное положение</label>
+                <select name="family" id="family" required>
+                    <option value="zero" selected disabled>Выберите из списка</option>
+                    <option value="Замужем/Женат">Замужем/Женат</option>
+                    <option value="Холост/Свободна">Холост/Свободна</option>
+                </select>
+            </div>
+           
+            <div class="input-block">
+                <label for="country">Гражданство</label>
+                <input type="text" name="country" id="country" required>
+            </div>
 
-            <label for="family">Семейное положение</label>
-            <select name="family" id="family" required>
-                <option value="zero" selected disabled>Выберите из списка</option>
-                <option value="Замужем/Женат">Замужем/Женат</option>
-                <option value="Холост/Свободна">Холост/Свободна</option>
-            </select>
-
-            <label for="country">Гражданство</label>
-            <input type="text" name="country" id="country" required>
-
-            <label for="city">Город проживания</label>
-            <input type="text" name="city" id="city" required>
+            <div class="input-block">
+                <label for="city">Город проживания</label>
+                <input type="text" name="city" id="city" required>    
+            </div>
         </article>
 
         <article class="buttons">
-            <a href="#" class="next-btn" onclick="nextStep2()">Далее</a>
+            <a href="#" class="next-btn button" onclick="nextStep2()">Далее</a>
         </article>
     </section>
 
@@ -62,25 +69,35 @@
         </article>
 
         <article class="block-info">
-            <label for="tel">Мобильный телефон</label>
-            <input type="tel" name="tel" id="tel" required>
+            <div class="input-block">
+                <label for="tel">Мобильный телефон</label>
+                <input type="tel" name="tel" id="tel" required>
+            </div>
 
-            <label for="email">Электртонная почта</label>
-            <input type="email" name="email" id="email">
+            <div class="input-block">
+                <label for="email">Электртонная почта</label>
+                <input type="email" name="email" id="email">
+            </div>
 
-            <label for="telegram">Telegram</label>
-            <input type="text" name="telegram" id="telegram" required>
+            <div class="input-block">
+                <label for="telegram">Telegram</label>
+                <input type="text" name="telegram" id="telegram" required>
+            </div>
 
-            <label for="instagram">Instagram</label>
-            <input type="text" name="instagram" id="instagram" required>
+            <div class="input-block">
+                <label for="instagram">Instagram</label>
+                <input type="text" name="instagram" id="instagram" required>
+            </div>
 
-            <label for="photo">Фотография</label>
-            <input type="file" name="photo" id="photo">
+            <div class="input-block">
+                <label for="photo">Фотография</label>
+                <input type="file" name="photo" id="photo">
+            </div>
         </article>
 
         <article class="buttons">
-            <a href="#" class="prev-btn" onclick="prevStep1()">Назад</a>
-            <a href="#" class="next-btn" onclick="nextStep3()">Далее</a>
+            <a href="#" class="prev-btn button" onclick="prevStep1()">Назад</a>
+            <a href="#" class="next-btn button" onclick="nextStep3()">Далее</a>
         </article>
     </section>
 
@@ -90,48 +107,69 @@
         </article>
 
         <article class="block-info">
-            <label for="college">Наименование учебного заведения</label>
-            <input type="text" name="college" id="college" required>
-
-            <label for="education">Уровень образования</label>
+            <div class="block-info">
+                <label for="college">Наименование учебного заведения</label>
+                <input type="text" name="college" id="college" required>
+            </div>
+            <div class="block-info">
+                <label for="education">Уровень образования</label>
             <select name="education" id="education" required>
                 <option value="zero" selected disabled>Выберите из списка</option>
                 <option value="Высшее">Высшее</option>
                 <option value="Среднее специальное">Среднее специальное</option>
             </select>
+            </div>
 
-            <label for="educationType">Форма обучения (очная/заочная)</label>
+            <div class="block-info">
+                <label for="educationType">Форма обучения (очная/заочная)</label>
             <select name="educationType" id="educationType" required>
                 <option value="zero" selected disabled>Выберите из списка</option>
                 <option value="Очная">Очная</option>
                 <option value="Заочная">Заочная</option>
             </select>
+            </div>
 
-            <label for="faculty">Факультет</label>
+            <div class="block-info">
+                <label for="faculty">Факультет</label>
             <input type="text" name="faculty" id="faculty">
+            </div>
 
-            <label for="cafedre">Кафедра</label>
-            <input type="text" name="cafedre" id="cafedre">
+            <div class="block-info">
+                <label for="cafedre">Кафедра</label>
+                <input type="text" name="cafedre" id="cafedre">
+            </div>
 
-            <label for="speciality">Специальность</label>
-            <input type="text" name="speciality" id="speciality">
-
-            <label for="startYear">Год поступления</label>
-            <input class="date-own form-control" type="text" name="startYear" id="startYear">
-
-            <label for="finishYear">Год окончания</label>
-            <input class="date-own form-control" type="text" name="finishYear" id="finishYear">
-            
-            <label for="point">Средний балл по успеваемости</label>
+            <div class="block-info">
+                <label for="speciality">Специальность</label>
+                <input type="text" name="speciality" id="speciality">
+            </div>
+            <div class="block-info">
+                <div class="years-block">
+                    <div class="input-block">
+                        <label for="input-blockYear">Год поступления</label>
+                        <input class="date-own form-control" type="text" name="input-blockYear" id="input-blockYear">
+                    </div>
+    
+                    <div class="finish">
+                        <label for="finishYear">Год окончания</label>
+                        <input class="date-own form-control" type="text" name="finishYear" id="finishYear">    
+                    </div>
+                </div>
+            </div>
+            <div class="block-info">
+                <label for="point">Средний балл по успеваемости</label>
             <input type="text" name="point" id="point">
+            </div>            
+
+            
 
             <label for="diploma">Тема выпускной (дипломной) работы</label>
             <input type="text" name="diploma" id="dipoloma">
             
         </article>
         <article class="buttons">
-            <a href="#" class="prev-btn" onclick="prevStep2()">Назад</a>
-            <a href="#" class="next-btn" onclick="nextStep4()">Далее</a>
+            <a href="#" class="prev-btn button" onclick="prevStep2()">Назад</a>
+            <a href="#" class="next-btn button" onclick="nextStep4()">Далее</a>
         </article>
         </section>
     <section class="other-info block hidden" id="otherInfo">
@@ -164,8 +202,8 @@
             <label for="agree">Я даю согласие на обработку моих персональных данных</label>
         </article>
         <article class="buttons">
-            <a href="#" class="prev-btn" onclick="prevStep3()">Назад</a>
-            <button type="submit" class="next-btn">Отправить</button>
+            <a href="#" class="prev-btn button" onclick="prevStep3()">Назад</a>
+            <button type="submit" class="next-btn button">Отправить</button>
         </article>
     </section>
 </form>

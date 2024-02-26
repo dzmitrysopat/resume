@@ -21,15 +21,13 @@ function nextStep4(){
     console.log(startYear);
     console.log(finishYear);
     if (startYear > finishYear) {
-        console.log('error');
-    }
-    else {
-        console.log('good');
-    }
+        alert('Дата окончания превышает дату поступления');
+    } else{
     document.getElementById("educationInfo").classList.add("hidden");
     document.getElementById("otherInfo").classList.remove("hidden");
     document.getElementById("thirdBlock").classList.remove("active");
     document.getElementById("lastBlock").classList.add("active");
+}
 }
 
 // prev Steps

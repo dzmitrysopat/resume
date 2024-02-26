@@ -12,6 +12,8 @@
 
 html {
     scroll-behavior: smooth;
+    opacity: 1;
+    transition: all 2s;
 }
 
 body{
@@ -19,7 +21,8 @@ body{
     align-items: center;
     justify-content: center;
     flex: 1;
-    gap: 50px;
+    gap: 25px;
+    min-height: 100vh;
     margin: 0 auto;
     overflow-x: hidden;
     flex-direction: column;
@@ -36,18 +39,26 @@ ol{
     display: flex;
     align-items: center;
     gap: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
 }
 
 li{
     border: 2px solid #383838;
     list-style-position: inside;
+    list-style: none;
     padding: 5px 18px;
     border-radius: 5px;
     /* cursor: pointer; */
     transition: all .4s;
+    cursor: default;
 }
 
-li.active, li:hover{
+li.active{
     background-color: #383838;
     padding: 5px 18px;
     color: #fff;
@@ -75,6 +86,8 @@ section.block{
     flex-direction: column;
     gap: 25px;
     margin: 15px 30px;
+    opacity: 1;
+    transition: all 0.5s;
 }
 
 h2{
@@ -92,7 +105,7 @@ article.buttons > button{
     color: #fff;
     background-color: #383838;
     font-size: 18px;
-    transition: all .4s;  
+    transition: all .4s; 
 }
 
 article.buttons > a:hover,
@@ -105,7 +118,7 @@ article.buttons > button:hover{
 article.block-info{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 option:nth-child(1){
@@ -118,6 +131,7 @@ label{
 }
 
 input, select, option, textarea, input.form-control{
+    font-size: 25px;
     padding: 15px;
     width: 30vw;
     border-radius: 8px;
@@ -140,4 +154,18 @@ input[type=checkbox]{
 select > option{
     font-size: 18px;
     border-radius: 15px;
+}
+
+div.years-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.years-block > div > input{
+    width: 14vw !important;
+}
+
+div.input-block{
+    display: flex;
+    flex-direction: column;
 }
