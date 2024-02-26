@@ -17,8 +17,15 @@ function nextStep3(){
 
 function nextStep4(){
     const startYear = document.getElementById("startYear").value;
-    // let value = startYear.value;
+    const finishYear = document.getElementById("finishYear").value;
     console.log(startYear);
+    console.log(finishYear);
+    if (startYear > finishYear) {
+        console.log('error');
+    }
+    else {
+        console.log('good');
+    }
     document.getElementById("educationInfo").classList.add("hidden");
     document.getElementById("otherInfo").classList.remove("hidden");
     document.getElementById("thirdBlock").classList.remove("active");
