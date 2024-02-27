@@ -181,13 +181,16 @@ div.checkbox-container{
     position: relative;
     transition: all .4s;
     padding-left: 50px;
-    /* margin-top: 12px; */
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+div.checkbox-container > label{
+    cursor: pointer;
 }
 
 div.checkbox-container > .checkmark {
@@ -198,10 +201,11 @@ div.checkbox-container > .checkmark {
     width: 32px;
     border: 2px solid #ddd;
     border-radius: 8px;
+    transition: all .4s;
 }
 
 div.checkbox-container:hover input ~ .checkmark{
-    background-color: #ddd;
+    background-color: #555555;
 }
 
 .checkbox-container input:checked ~ .checkmark {
@@ -219,11 +223,11 @@ div.checkbox-container:hover input ~ .checkmark{
 }
 
 .checkbox-container .checkmark:after {
-    left: 9px;
+    left: 10px;
     top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
+    width: 8px;
+    height: 16px;
+    border: solid #ddd;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
