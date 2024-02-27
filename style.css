@@ -153,9 +153,9 @@ input.form-control{
     height: 50px;
 }
 
-input[type=checkbox]{
+/* input[type=checkbox]{
     width: fit-content;
-}
+} */
 
 select > option{
     font-size: 18px;
@@ -204,7 +204,7 @@ div.checkbox-container > label{
 
 div.checkbox-container > .checkmark {
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 0;
     height: 32px;
     width: 32px;
