@@ -1,213 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front-End</title>
+    <title>Анкета специлаиста</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./mobile.css">
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" id="favicon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <link rel="shortcut icon" href="./img/icons8-check-120.png" type="image/x-icon">
+    <!-- Include Bootstrap CSS and JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
 </head>
 
-<body class="">
-    <div class="custom-shape-divider-top-1708346947">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
-    <header id="header" class="header">
-        <a href="./index.html" id="logo" class="logo"><img src="/img/logo.png" class="logo-img" id="logoImg" alt="">Совет молодёжи</a>
-        </nav>
-    </header>
-    
-    <main id="main" class="main">
-        
-        
-
-        <article class="container" id="contact">
-            <section class="container-name">
-                <h2>Анкета участника проекта</h2>
-                <!-- <h4>Забудь всё, чему тебе учили в университете!</h4> -->
-            </section>
-            <section class="container">
-                <!-- <div class="parent-card container">
-                    <h3>Hit me up! 👇</h3>
-                    <a href="https://t.me/dimka_myxa" target="_blank" class="card">
-                        <div class="skill-item">
-                            <i class="uil uil-telegram-alt"></i>
-                            <div class="skill-description">
-                                <h4>Telegram</h4>
-                                <h5>Find me</h5>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://instagram.com/dimka_myxa" target="_blank" class="card">
-                        <div class="skill-item">
-                            <i class="uil uil-instagram"></i>
-                            <div class="skill-description">
-                                <h4>Instagram</h4>
-                                <h5>Follow me</h5>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://by.linkedin.com/in/dzmitry-sopat-796473251" target="_blank" class="card">
-                        <div class="skill-item">
-                            <i class="uil uil-linkedin"></i>
-                            <div class="skill-description">
-                                <h4>Linkedin</h4>
-                                <h5>Hire me</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
-                <div class="parent-card container">
-                    
-                    <form method="post" action="https://formsubmit.co/dzmitrysopat@gmail.com" >
-                        <section class="common-information" id="commonInfo">
-                            <div class="block-name">
-                                <img src="./img/human.svg" alt="" class="icon">
-                                <h3>Основная информация</h3>
-                            </div>
-                            <article class="information">
-                                <label for="name">Фамилия Имя Отчество</label>
-                                <input type="text" name="name" id="name" placeholder="Как Вас зовут" reqired>
-                                <label for="birth">Дата рождения</label>
-                                <input type="date" name="birth" id="birth" placeholder="Как Вас зовут" reqired>
-                                <label for="country">Гражданство</label>
-                                <input type="text" name="country" id="country" placeholder="Ваша национальность" reqired>
-                                <label for="city">Город проживания</label>
-                                <input type="text" name="city" id="city" placeholder="Ваш город" reqired>
-                                <label for="family">Семейное положение</label>
-                                <select id="family" name="family" required>
-                                    <option value="zero" selected disabled>Выберите из списка</option>
-                                    <option value="Холост/Свободна">Холост/Свободна</option>
-                                    <option value="Замужем/Женат">Замужем/Женат</option>
-                                </select>
-                                <label for="photo">Ваша фотография</label>
-                                <input type="file" name="photo" id="photo">
-                            </article>  
-                            <a href="#" class="btn next" id="step2" onclick="showStep2()">Далее<i class='bx bx-right-arrow-alt' ></i></a>                      
-                        </section>
-                        
-
-                        <section class="common-information hidden" id="contactInfo">
-                            <div class="block-name">
-                                <img src="./img/human.svg" alt="" class="icon">
-                                <h3>Контактная информация</h3>
-                            </div>
-                            <article class="information">
-                                <label for="phone">Мобильный телефон</label>
-                                <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" reqired>
-                                <label for="email">Электроннаяx`почта</label>
-                                <input type="email" name="email" id="email" placeholder="Ваша эл.почта" reqired>
-                                <label for="telegram">Мессенджеры</label>
-                                <input type="text" name="telegram" id="telegram" placeholder="Telegram">
-                                <label for="instagram">Соц.сети</label>
-                                <input type="text" name="instagram" id="instagram" placeholder="Instagram">
-                            </article> 
-                            <article class="buttons">
-                                <a href="#" class="btn next" id="step1" onclick="showStep1()"><i class='bx bx-arrow-back'></i>Назад</a>  
-                                <a href="#" class="btn next" id="step3" onclick="showStep3()">Далее<i class='bx bx-right-arrow-alt' ></i></a>                              
-                            </article>
-                        </section>
-
-                        <section class="common-information hidden" id="EducationInfo">
-                            <div class="block-name">
-                                <img src="./img/human.svg" alt="" class="icon">
-                                <h3>Образование</h3>
-                            </div>
-                            <article class="information">
-                                <label for="education">Уровень образования</label>
-                                <select required id="education">
-                                    <option value="zero" selected disabled>Выберите из списка</option>
-                                    <option value="first">Высшее</option>
-                                    <option value="second">Среднее специальное</option>
-                                </select>
-                                <label for="college">Наименование учебного заведения</label>
-                                <input type="text" name="college" id="college" placeholder="ГГТУ, БелГУТ" reqired>
-                                <label for="educationType">Форма обучения</label>
-                                <select required id="educationType">
-                                    <option value="zero" selected disabled>Выберите из списка</option>
-                                    <option value="first">Очная</option>
-                                    <option value="second">Заочная</option>
-                                </select>
-                                <label for="faculty">Факультет</label>
-                                <input type="text" name="faculty" id="faculty" placeholder="" reqired>
-                                <label for="cafedre">Кафедра</label>
-                                <input type="text" name="cafedre" id="cafedre" placeholder="Электроснабжение" reqired>
-                                <label for="qualify">Ваша специальность</label>
-                                <input type="text" name="qualify" id="qualify" placeholder="Электроснабжение" reqired>
-                                <label for="startYear">Год поступления</label>
-                                <input type="number" min="2010" max="2020" step="1" value="2013" id="startYear" />
-                                <label for="finalYear">Год окончания</label>
-                                <input type="number" id="finalYear" min="2010" max="2028" step="1" value="2013" />
-                                <label for="diploma">Тема дипломной/выпускной работы</label>
-                                <input type="text" name="diploma" id="diploma" placeholder="Ваш дипломный проект" reqired>
-                            </article>
-                            <article class="buttons">
-                                <a href="#" class="btn next" id="back2" onclick="backStep2()"><i class='bx bx-arrow-back'></i>Назад</a>   
-                                <a href="#" class="btn next" id="step4" onclick="showStep4()">Далее<i class='bx bx-right-arrow-alt' ></i></a>                              
-                            </article>
-                        </section>
-
-                        <section class="common-information hidden" id="OtherInfo">
-                            <div class="block-name">
-                                <img src="./img/human.svg" alt="" class="icon">
-                                <h3>Прочая информация</h3>
-                            </div>
-                            <article class="information">
-                                <label for="community">Принадлежность к общественному объединению</label>
-                                <input type="text" name="community" id="community" placeholder="БРСМ, Белая Русь и т.д." reqired>
-                                <label for="langs">Какими языками владеете?</label>
-                                <input type="text" name="langs" id="langs" placeholder="Английский, Испанский и т.д" reqired>
-                                <label for="wins">Расскажите о своих достижениях</label>
-                                <textarea name="wins" id="wins" placeholder="дипломах, сертификатах, поощрениях, участии в олимпиадах, конкурсах, студенческих организациях и т.д."></textarea>                                
-                                <label for="about"> Хотите рассказать о себе что-то еще?</label>
-                                <textarea name="about" id="about" placeholder="Интересы, хобби и увлечения, спортивные достижения и т.д."></textarea>                         
-                                
-                            </article>   
-                            <input type="hidden" name="_captcha" value="false">
-                            
-                            <input type="hidden" name="_template" value="table">
-                            <!-- <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/Portfolio/">   -->
-                            <article class="buttons">
-                                <a href="#" class="btn next" id="back3" onclick="backStep3()"><i class='bx bx-arrow-back'></i>Назад</a>   
-                                <button class="btn" type="submit">Send Message<i class="uil uil-message"></i></button>    
-                            </article>
-                        </section>
-                        
-                    </form>
-                </div>
-            </section>
+<body>
+    <ol>
+        <li class="active" id="firstBlock">Основое</li>
+        <li class="" id="secondBlock">Контакы</li>
+        <li class="" id="thirdBlock">Образование</li>
+        <li class="" id="lastBlock">Прочее</li>
+    </ol>
+    <form action="" method="post">
+    <section class="common-info block" id="commonInfo">
+        <article class="block-name">
+            <h2>Основная информация</h2>
         </article>
-    </main>
 
-    <div id="progress">
-        <span id="progress-value"><i class="uil uil-arrow-up"></i></span>
-    </div>
+        <article class="block-info">
+            <div class="input-block">
+                <label for="name">Фамилия Имя Отчество</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+           
+            <div class="input-block">
+                <label for="birth">Дата рождения</label>
+                <input type="date" name="birth" id="birth" required>
+            </div>
 
+            <div class="input-block">
+                <label for="family">Семейное положение</label>
+                <select name="family" id="family" required>
+                    <option value="zero" selected disabled>Выберите из списка</option>
+                    <option value="Замужем/Женат">Замужем/Женат</option>
+                    <option value="Холост/Свободна">Холост/Свободна</option>
+                </select>
+            </div>
+           
+            <div class="input-block">
+                <label for="country">Гражданство</label>
+                <input type="text" name="country" id="country" required>
+            </div>
 
+            <div class="input-block">
+                <label for="city">Город проживания</label>
+                <input type="text" name="city" id="city" required>    
+            </div>
+        </article>
 
-    <footer id="footer" class="footer">
-        <div class="custom-shape-divider-bottom-1708347393">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <h5 class="copyright">Copyright © 2023. All rights are reserved</h5>
+        <article class="buttons">
+            <a href="#" class="next-btn button" onclick="nextStep2()">Далее</a>
+        </article>
+    </section>
 
-    </footer>
+    <section class="contact-info block hidden" id="contactInfo">
+        <article class="block-name">
+            <h2>Контактная информация</h2>
+        </article>
 
+        <article class="block-info">
+            <div class="input-block">
+                <label for="tel">Мобильный телефон</label>
+                <input type="tel" name="tel" id="tel" required>
+            </div>
+
+            <div class="input-block">
+                <label for="email">Электртонная почта</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="input-block">
+                <label for="telegram">Telegram</label>
+                <input type="text" name="telegram" id="telegram" required>
+            </div>
+
+            <div class="input-block">
+                <label for="instagram">Instagram</label>
+                <input type="text" name="instagram" id="instagram" required>
+            </div>
+
+            <div class="input-block">
+                <label for="photo">Фотография</label>
+                <input type="file" name="photo" id="photo">
+            </div>
+        </article>
+
+        <article class="buttons">
+            <a href="#" class="prev-btn button" onclick="prevStep1()">Назад</a>
+            <a href="#" class="next-btn button" onclick="nextStep3()">Далее</a>
+        </article>
+    </section>
+
+    <section class="education-info block hidden" id="educationInfo">
+        <article class="block-name">
+            <h2>Образование</h2>
+        </article>
+
+        <article class="block-info">
+            <div class="input-block">
+                <label for="college">Наименование учебного заведения</label>
+                <input type="text" name="college" id="college" required>
+            </div>
+            <div class="input-block">
+                <label for="education">Уровень образования</label>
+            <select name="education" id="education" required>
+                <option value="zero" selected disabled>Выберите из списка</option>
+                <option value="Высшее">Высшее</option>
+                <option value="Среднее специальное">Среднее специальное</option>
+            </select>
+            </div>
+
+            <div class="input-block">
+                <label for="educationType">Форма обучения (очная/заочная)</label>
+            <select name="educationType" id="educationType" required>
+                <option value="zero" selected disabled>Выберите из списка</option>
+                <option value="Очная">Очная</option>
+                <option value="Заочная">Заочная</option>
+            </select>
+            </div>
+
+            <div class="input-block">
+                <label for="faculty">Факультет</label>
+            <input type="text" name="faculty" id="faculty">
+            </div>
+
+            <div class="input-block">
+                <label for="cafedre">Кафедра</label>
+                <input type="text" name="cafedre" id="cafedre">
+            </div>
+
+            <div class="input-block">
+                <label for="speciality">Специальность</label>
+                <input type="text" name="speciality" id="speciality">
+            </div>
+            <div class="input-block">
+                <div class="years-block">
+                    <div class="input-block">
+                        <label for="startYear">Год поступления</label>
+                        <input class="date-own form-control" type="text" name="startYear" id="startYear">
+                    </div>
     
-    
-    <script src="./script.js"></script>
-    <!-- <script src="./theme.js"></script> -->
-    
+                    <div class="finish">
+                        <label for="finishYear">Год окончания</label>
+                        <input class="date-own form-control" type="text" name="finishYear" id="finishYear">    
+                    </div>
+                </div>
+            </div>
+            <div class="input-block">
+                <label for="point">Средний балл по успеваемости</label>
+            <input type="text" name="point" id="point">
+            </div>            
+
+            <div class="input-block">
+                <label for="diploma">Тема выпускной (дипломной) работы</label>
+                <input type="text" name="diploma" id="dipoloma">
+            </div>    
+        </article>
+
+        <article class="buttons">
+            <a href="#" class="prev-btn button" onclick="prevStep2()">Назад</a>
+            <a href="#" class="next-btn button" onclick="nextStep4()">Далее</a>
+        </article>
+        </section>
+
+    <section class="other-info block hidden" id="otherInfo">
+        <article class="block-name">
+            <h2>Прочая информация</h2>
+        </article>
+        <article class="block-info">
+            <div class="input-block">
+                <label for="Hogwarts">Принадлежность к общественному объединению</label>
+                <input type="text" name="Hogwarts" id="Hogwarts">    
+            </div>
+
+            <div class="input-block">
+                <label for="languages">Какими языками владеете?</label>
+                <input type="text" name="languages" id="languages">
+            </div>
+
+            <div class="input-block">
+                <label for="interestings">Чем Вас заинтересовало участие в проекте?</label>
+                <textarea name="interestings" id="interesting"></textarea>
+            </div>
+
+            <div class="input-block">
+                <label for="skills">Какие Ваши навыки и умения позволят добиться успеха в рамках проекта?</label>
+                <input type="text" name="skills" id="skills">
+            </div>
+            <div class="input-block">
+                <label for="publications">Чему посвящены Ваши учебные проекты и/или научные публикации?</label>
+                <textarea name="publications" id="publications"></textarea>
+            </div>
+
+            <div class="input-block"> 
+                <label for="achievements">Расскажите о своих достижениях</label>
+                <textarea name="achievements" id="achievements"></textarea>
+            </div>
+
+            <div class="input-block">
+                <label for="about">Хотите рассказать о себе что-то еще? </label>
+                <textarea name="about" id="about"></textarea>
+            </div>
+
+            <div class="input-block checkbox-container">
+                <input type="checkbox" name="agree" id="agree" checked>
+                <span class="checkmark"></span>
+                <label for="agree">Я даю согласие на обработку моих персональных данных</label>    
+            </div>            
+        </article>
+
+        <article class="buttons">
+            <a href="#" class="prev-btn button" onclick="prevStep3()">Назад</a>
+            <button type="submit" class="next-btn button">Отправить</button>
+        </article>
+    </section>
+</form>
+
+<script>
+    $('.date-own').datepicker({
+        minViewMode: 2,
+        format: 'yyyy'
+    });
+</script>
+<script src="script.js"></script>
 </body>
 </html>
