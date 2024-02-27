@@ -15,12 +15,17 @@
     }
 
     form{
-        max-width: 500px;
+        max-width: 350px;
     }
 
     h2{
         font-size: 2.5rem !important;
     }
+
+    input, select, option, textarea, input.form-control{
+        width: 300px;
+    }
+
 
     input[type=date]{
         width: 100%;

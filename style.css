@@ -67,7 +67,8 @@ li.active{
 }
 
 form{
-    max-width: clamp(300px 100% 550px);
+    /* max-width: clamp(300px 100% 550px); */
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,7 +140,8 @@ label{
 input, select, option, textarea, input.form-control{
     font-size: 25px;
     padding: 15px;
-    width: clamp(250px 50% 450px);
+    /* width: clamp(250px 50% 450px); */
+    width: 400px;
     border-radius: 8px;
     border: 2px solid #dddddd;
     background-color: inherit;
