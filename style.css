@@ -131,7 +131,7 @@ label{
 input, select, option, textarea, input.form-control{
     font-size: 25px;
     padding: 15px;
-    width: 22vw;
+    width: clamp(250px 50% 450px);
     border-radius: 8px;
     border: 2px solid #dddddd;
     background-color: inherit;
@@ -156,6 +156,7 @@ select > option{
 
 div.years-block{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
