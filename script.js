@@ -1,5 +1,38 @@
 
+// const input_file = document.getElementById("photo");
+// input_file.addEventListener('change', async function(){
+// const file = document.querySelector("#photo").files;
+// console.log("file", file)
+// })
 
+// const input_file = document.getElementById("photo");
+
+// const convert_to_base64 = file => new Promise((response) => {
+//    const file_reader = new FileReader();
+//    file_reader.readAsDataURL(file);
+//    file_reader.onload = () => response(file_reader.result);
+// });
+
+// input_file.addEventListener('change', async function(){
+//    const file = document.querySelector("#photo").files;
+//    const my_image = await convert_to_base64(file[0]);
+//    console.log(my_image, "my_image")
+//    })
+
+   const input_file = document.getElementById("photo");
+const input_label = document.getElementById("photoLabel")
+
+const convert_to_base64 = file => new Promise((response) => {
+   const file_reader = new FileReader();
+   file_reader.readAsDataURL(file);
+   file_reader.onload = () => response(file_reader.result);
+});
+
+input_file.addEventListener('change', async function(){
+   const file = document.querySelector("#photo").files;
+   const my_image = await convert_to_base64(file[0]);
+   input_label.style.backgroundImage =`url(${my_image})`
+   })
 
 function nextStep2(){
     document.getElementById("commonInfo").classList.add("hidden");
@@ -7,6 +40,8 @@ function nextStep2(){
     document.getElementById("firstBlock").classList.remove("active");
     document.getElementById("secondBlock").classList.add("active");
 }
+
+
 
 function nextStep3(){
     document.getElementById("contactInfo").classList.add("hidden");
@@ -52,3 +87,5 @@ function prevStep3(){
     document.getElementById("lastBlock").classList.remove("active");
     document.getElementById("thirdBlock").classList.add("active");
 }
+
+

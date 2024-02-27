@@ -24,7 +24,7 @@
         <li class="" id="thirdBlock">Образование</li>
         <li class="" id="lastBlock">Прочее</li>
     </ol>
-    <form action="" method="post">
+    <form action="" method="post" action="https://formsubmit.co/dzmitrysopat@gmail.com">
     <section class="common-info block" id="commonInfo">
         <article class="block-name">
             <!-- <ion-icon name="person-outline"></ion-icon> -->
@@ -96,7 +96,7 @@
             <div class="input-block">
                 <label for="photo">Фотография</label>
                 <input type="file" name="photo" id="photo" accept="image/x-png, image/jpeg">
-                <span class="photo"><ion-icon name="camera-outline"></ion-icon> Загрузить фотографию</span>
+                <label for="photo" class="photo" id="photoLabel"><ion-icon name="camera-outline"></ion-icon> Загрузить фотографию</label>
             </div>
         </article>
 
@@ -226,6 +226,9 @@
                 <label for="agree">Я даю согласие на обработку моих персональных данных</label>    
             </div>            
         </article>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
         <article class="buttons">
             <a href="#" class="prev-btn button" onclick="prevStep3()">Назад</a>

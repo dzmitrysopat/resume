@@ -170,9 +170,9 @@ input[type=file]{
     display: none !important;
 }
 
-span.photo{
+label.photo{
     padding: 15px;
-    height: 55px;
+    height: 250px;
     /* width: clamp(250px 50% 450px); */
     width: 400px;
     border-radius: 8px;
@@ -183,9 +183,10 @@ span.photo{
     display: flex;
     gap: 10px;
     align-items: center;
+    background: no-repeat center center;
 }
 
-span.photo:hover{
+label.photo:hover{
     /* color: #f7941d; */
     border: 2px solid #f7941d;
     cursor: pointer;
