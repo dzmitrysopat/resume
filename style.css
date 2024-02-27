@@ -128,6 +128,17 @@ article.block-info{
     gap: 20px;
 }
 
+article.block-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border-bottom: 2px solid #ddd; */
+}
+
+article.block-name > ion-icon{
+    font-size: 30px;
+}
+
 option:nth-child(1){
     display: none;
 }
@@ -155,9 +166,30 @@ input.form-control{
     height: 50px;
 }
 
-/* input[type=checkbox]{
-    width: fit-content;
-} */
+input[type=file]{
+    display: none !important;
+}
+
+span.photo{
+    padding: 15px;
+    height: 55px;
+    /* width: clamp(250px 50% 450px); */
+    width: 400px;
+    border-radius: 8px;
+    border: 2px solid #dddddd;
+    background-color: inherit;
+    transition: all .4s;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+span.photo:hover{
+    /* color: #f7941d; */
+    border: 2px solid #f7941d;
+    cursor: pointer;
+}
 
 select > option{
     font-size: 18px;
@@ -243,4 +275,8 @@ div.checkbox-container:hover input ~ .checkmark{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+ion-icon{
+    font-size: 25px;
 }

@@ -46,6 +46,10 @@
         top: 10px;
     }
 
+    span.photo{
+        width: 100%;
+    }
+
     div.years-block{
         flex-direction: column;
         gap: 25px;
