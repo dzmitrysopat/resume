@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     font-weight: 100;
-    /* outline: 2px solid lightgreen; */
+    outline: 2px solid lightgreen;
 }
 
 html {
@@ -196,7 +196,7 @@ div.checkbox-container > label{
 
 div.checkbox-container > .checkmark {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     height: 32px;
     width: 32px;
