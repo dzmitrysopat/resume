@@ -14,8 +14,14 @@
         display: none;
     }
 
-    form{
+    
+
+    header, form{
         max-width: 350px;
+    }
+
+    header > a{
+        font-weight: 100;
     }
 
     h2{
