@@ -149,7 +149,7 @@ label{
 }
 
 input, select, option, textarea, input.form-control{
-    font-size: 25px;
+    font-size: 18px;
     padding: 15px;
     /* width: clamp(250px 50% 450px); */
     width: 400px;
