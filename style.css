@@ -183,7 +183,7 @@ label.photo{
     display: flex;
     gap: 10px;
     align-items: center;
-    background: no-repeat center center;
+    background: no-repeat center/100%;
 }
 
 label.photo:hover{
