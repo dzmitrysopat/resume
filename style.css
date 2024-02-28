@@ -210,7 +210,7 @@ input[type=file]{
 
 label.photo{
     padding: 15px;
-    height: 250px;
+    height: 55px;
     /* width: clamp(250px 50% 450px); */
     width: 400px;
     border-radius: 8px;
@@ -242,7 +242,7 @@ div.years-block{
 }
 
 div.years-block > div > input{
-    width: 14vw !important;
+    width: 10vw !important;
 }
 
 div.input-block{
@@ -319,6 +319,12 @@ div.checkbox-container:hover input ~ .checkmark{
     transform: rotate(45deg);
 }
 
-ion-icon{
-    font-size: 25px;
+/* ion-icon{
+    font-size: 30px;
+    margin-right: 5px;
+} */
+
+h2 > img{
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
