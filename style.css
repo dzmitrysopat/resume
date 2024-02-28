@@ -201,10 +201,6 @@ input, select, option, textarea, input.form-control{
     background-color: inherit;
 }
 
-input, select, option, textarea, input.form-control:hover{
-    border: 2px solid #f7941d;
-}
-
 .ui-datepicker-calendar {
     display: none;
 }
