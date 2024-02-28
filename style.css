@@ -146,6 +146,10 @@ article.buttons > button{
     width: 50%;
 }
 
+section.common-info > article.buttons > a{
+    width: 100%;
+}
+
 article.buttons > a:hover,
 article.buttons > button:hover{
     color: #383838;
