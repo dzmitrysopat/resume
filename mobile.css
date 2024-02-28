@@ -14,8 +14,6 @@
         display: none;
     }
 
-    
-
     header, form{
         max-width: 350px;
     }
@@ -29,7 +27,7 @@
     }
 
     input, select, option, textarea, input.form-control{
-        width: 300px;
+        width: 90vw;
     }
 
 
