@@ -36,13 +36,13 @@
 
         <article class="block-info">
             <div class="input-block">
-                <label for="name">Фамилия Имя Отчество</label>
-                <input type="text" name="name" id="name" required>
+                <label for="name">Фамилия Имя Отчество <span>*</span></label>
+                <input placeholder="Как к Вам обращаться" type="text" name="name" id="name" required placeholder="">
             </div>
            
             <div class="input-block">
-                <label for="birth">Дата рождения</label>
-                <input type="date" name="birth" id="birth" required>
+                <label for="birth">Дата рождения <span>*</span></label>
+                <input placeholder="" type="date" name="birth" id="birth" required>
             </div>
 
             <div class="input-block">
@@ -56,12 +56,12 @@
            
             <div class="input-block">
                 <label for="country">Гражданство</label>
-                <input type="text" name="country" id="country" required>
+                <input placeholder="Республика Беларусь" type="text" name="country" id="country" required>
             </div>
 
             <div class="input-block">
                 <label for="city">Город проживания</label>
-                <input type="text" name="city" id="city" required>    
+                <input placeholder="Гомель" type="text" name="city" id="city" required>    
             </div>
         </article>
 
@@ -77,28 +77,28 @@
 
         <article class="block-info">
             <div class="input-block">
-                <label for="tel">Мобильный телефон</label>
-                <input type="tel" name="tel" id="tel" required>
+                <label for="tel">Мобильный телефон <span>*</span></label>
+                <input placeholder="+375 (29) ХХХ-ХХ-ХХ" type="tel" name="tel" id="tel" required>
             </div>
 
             <div class="input-block">
                 <label for="email">Электртонная почта</label>
-                <input type="email" name="email" id="email">
+                <input placeholder="soviet@gomelenergo.by" type="email" name="email" id="email">
             </div>
 
             <div class="input-block">
-                <label for="telegram">Telegram</label>
-                <input type="text" name="telegram" id="telegram" required>
+                <label for="telegram">Telegram <span>*</span></label>
+                <input placeholder="Ваш никнейм" type="text" name="telegram" id="telegram" required>
             </div>
 
             <div class="input-block">
-                <label for="instagram">Instagram</label>
-                <input type="text" name="instagram" id="instagram" required>
+                <label for="instagram">Instagram <span>*</span></label>
+                <input placeholder="Ваш никнейм" type="text" name="instagram" id="instagram" required>
             </div>
 
             <div class="input-block">
                 <label for="photo">Фотография</label>
-                <input type="file" name="photo" id="photo" accept="image/x-png, image/jpeg">
+                <input placeholder="" type="file" name="photo" id="photo" accept="image/x-png, image/jpeg">
                 <label for="photo" class="photo" id="photoLabel"><ion-icon name="camera-outline"></ion-icon> Загрузить фотографию</label>
             </div>
         </article>
@@ -116,11 +116,11 @@
 
         <article class="block-info">
             <div class="input-block">
-                <label for="college">Наименование учебного заведения</label>
-                <input type="text" name="college" id="college" required>
+                <label for="college">Наименование учебного заведения <span>*</span></label>
+                <input placeholder="Ваша Альма-Матер" type="text" name="college" id="college" required>
             </div>
             <div class="input-block">
-                <label for="education">Уровень образования</label>
+                <label for="education">Уровень образования <span>*</span></label>
             <select name="education" id="education" required>
                 <option value="zero" selected disabled>Выберите из списка</option>
                 <option value="Высшее">Высшее</option>
@@ -129,7 +129,7 @@
             </div>
 
             <div class="input-block">
-                <label for="educationType">Форма обучения</label>
+                <label for="educationType">Форма обучения <span>*</span></label>
             <select name="educationType" id="educationType" required>
                 <option value="zero" selected disabled>Выберите из списка</option>
                 <option value="Очная">Очная</option>
@@ -139,41 +139,41 @@
 
             <!-- <div class="input-block">
                 <label for="faculty">Факультет</label>
-            <input type="text" name="faculty" id="faculty">
+            <input placeholder="" type="text" name="faculty" id="faculty">
             </div>
 
             <div class="input-block">
                 <label for="cafedre">Кафедра</label>
-                <input type="text" name="cafedre" id="cafedre">
+                <input placeholder="" type="text" name="cafedre" id="cafedre">
             </div> -->
 
             <div class="input-block">
                 <label for="speciality">Специальность</label>
-                <input type="text" name="speciality" id="speciality">
+                <input placeholder="Электроснабжение" type="text" name="speciality" id="speciality">
             </div>
 
             <div class="input-block">
                 <div class="years-block">
                     <div class="input-block">
                         <label for="startYear">Год поступления</label>
-                        <input class="date-own form-control" type="text" name="startYear" id="startYear">
+                        <input placeholder="2019" class="date-own form-control" type="text" name="startYear" id="startYear">
                     </div>
     
                     <div class="finish">
                         <label for="finishYear">Год окончания</label>
-                        <input class="date-own form-control" type="text" name="finishYear" id="finishYear">    
+                        <input placeholder="2024" class="date-own form-control" type="text" name="finishYear" id="finishYear">    
                     </div>
                 </div>
             </div>
 
             <!-- <div class="input-block">
                 <label for="point">Средний балл по успеваемости</label>
-                <input type="text" name="point" id="point">
+                <input placeholder="" type="text" name="point" id="point">
             </div>             -->
 
             <div class="input-block">
                 <label for="diploma">Тема выпускной работы</label>
-                <input type="text" name="diploma" id="dipoloma">
+                <input placeholder="" type="text" name="diploma" id="dipoloma">
             </div>    
         </article>
 
@@ -190,22 +190,22 @@
         <article class="block-info">
             <!-- <div class="input-block">
                 <label for="Hogwarts">Принадлежность к общественному объединению</label>
-                <input type="text" name="Hogwarts" id="Hogwarts">    
+                <input placeholder="" type="text" name="Hogwarts" id="Hogwarts">    
             </div> -->
 
             <div class="input-block">
                 <label for="languages">Какими языками владеете?</label>
-                <input type="text" name="languages" id="languages">
+                <input placeholder="Английский, Французский" type="text" name="languages" id="languages">
+            </div>
+
+            <div class="input-block">
+                <label for="skills">Какие Ваши навыки и умения позволят добиться успеха в рамках проекта?</label>
+                <input placeholder="" type="text" name="skills" id="skills">
             </div>
 
             <div class="input-block">
                 <label for="interestings">Чем Вас заинтересовало участие в проекте?</label>
                 <textarea name="interestings" id="interesting"></textarea>
-            </div>
-
-            <div class="input-block">
-                <label for="skills">Какие Ваши навыки и умения позволят добиться успеха в рамках проекта?</label>
-                <input type="text" name="skills" id="skills">
             </div>
 
             <!-- <div class="input-block">
@@ -215,23 +215,23 @@
 
             <div class="input-block"> 
                 <label for="achievements">Расскажите о своих достижениях</label>
-                <textarea name="achievements" id="achievements"></textarea>
+                <textarea name="achievements" id="achievements" placeholder="Спортивные, научные, творческие"></textarea>
             </div>
 
             <div class="input-block">
                 <label for="about">Хотите рассказать о себе что-то еще? </label>
-                <textarea name="about" id="about"></textarea>
+                <textarea name="about" id="about" placeholder="Хобби, увлечения"></textarea>
             </div>
 
             <div class="input-block checkbox-container">
-                <input type="checkbox" name="agree" id="agree" checked>
+                <input placeholder="" type="checkbox" name="agree" id="agree" checked>
                 <span class="checkmark"></span>
                 <label for="agree">Я даю согласие на обработку моих персональных данных</label>    
             </div>            
         </article>
 
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
+        <input placeholder="" type="hidden" name="_captcha" value="false">
+        <input placeholder="" type="hidden" name="_template" value="table">
 
         <article class="buttons">
             <a href="#" class="prev-btn button" onclick="prevStep3()">Назад</a>
