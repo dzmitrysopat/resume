@@ -46,8 +46,8 @@
         top: 10px;
     }
 
-    span.photo{
-        width: 80%;
+    label.photo{
+        width: 100%;
     }
 
     div.years-block{
