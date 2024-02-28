@@ -50,10 +50,10 @@ header{
 header > a{
     display: flex;
     align-items: center;
-    gap: 0px;
+    gap: 10px;
     color: #383838;
     font-weight: 500;
-    /* line-height: 1.1; */
+    line-height: 1.1;
     font-size: 30px;
     /* font-weight: 700; */
     transition: all .4s;
@@ -65,7 +65,7 @@ header > a:hover{
 }
 
 header > a > img{
-    width: 85px;
+    width: 100px;
     /* height: 50px; */
 }
 
