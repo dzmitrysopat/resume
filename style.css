@@ -55,13 +55,11 @@ header > a{
     font-weight: 500;
     line-height: 1.1;
     font-size: 30px;
-    /* font-weight: 700; */
     transition: all .4s;
 }
 
 header > a:hover{
     text-decoration: none;
-    color: #004673;
 }
 
 header > a > img{
