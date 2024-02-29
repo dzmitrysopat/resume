@@ -1,5 +1,5 @@
 ➖fix photo loader
 <br>
-✅fix dates
+➖ fix dates
 <br>
-➖fix styles
+✅ fix styles
