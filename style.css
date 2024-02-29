@@ -355,6 +355,14 @@ a.card{
     transition: all .4s;
 }
 
+a.card:hover{
+    border: 2px solid #f7941d;
+}
+
+a.card:hover > div.skill-item > i{
+    color: #f7941d;
+}
+
 i{
     font-size: 40px;
     font-weight: 100;
