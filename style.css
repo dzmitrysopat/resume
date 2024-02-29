@@ -28,7 +28,6 @@ body{
     width: auto;
     flex-direction: column;
     background-color: #fafafa;
-    /* background: url('./img/wallhaven-exrqrr.jpg') no-repeat center; */
 }
 
 .hidden{
@@ -39,8 +38,6 @@ body{
 header{
     display: flex;
     width: 450px;
-    /* width: 100%; */
-    /* height: 100px; */
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -59,6 +56,7 @@ header > a{
 }
 
 header > a:hover{
+    color: #383838;
     text-decoration: none;
 }
 
@@ -85,7 +83,6 @@ li{
     list-style: none;
     padding: 5px 18px;
     border-radius: 5px;
-    /* cursor: pointer; */
     transition: all .4s;
     cursor: default;
 }
@@ -99,15 +96,11 @@ li.active{
 }
 
 form{
-    /* max-width: clamp(300px 100% 550px); */
     width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
-    /* background: rgba(255, 255, 255, 0.36); */
-    /* border-radius: 16px; */
-    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(7.3px);
     -webkit-backdrop-filter: blur(7.3px);
 }
@@ -169,7 +162,6 @@ article.block-name{
     display: flex;
     align-items: center;
     gap: 10px;
-    /* border-bottom: 2px solid #ddd; */
 }
 
 article.block-name > ion-icon{
@@ -214,7 +206,6 @@ input[type=file]{
 label.photo{
     padding: 15px;
     height: 55px;
-    /* width: clamp(250px 50% 450px); */
     width: 400px;
     border-radius: 8px;
     border: 2px solid #dddddd;
@@ -225,6 +216,8 @@ label.photo{
     gap: 10px;
     align-items: center;
     background: no-repeat center/100%;
+    color: #a3a3a3;
+    font-weight: 100;
 }
 
 label.photo:hover{
