@@ -50,7 +50,7 @@ header{
 header > a{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0px;
     color: #383838;
     font-weight: 500;
     line-height: 1.1;
