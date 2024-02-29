@@ -47,7 +47,7 @@ header{
 header > a{
     display: flex;
     align-items: center;
-    gap: 0px;
+    gap: 15px;
     color: #383838;
     font-weight: 500;
     line-height: 1.1;
@@ -61,7 +61,7 @@ header > a:hover{
 }
 
 header > a > img{
-    width: 100px;
+    width: 80px;
     /* height: 50px; */
 }
 

@@ -20,8 +20,9 @@
 
     header > a{
         font-size: 28px;
-        font-weight: 700;
-
+        font-weight: 500;
+        line-height: 1.25;
+        margin-top: 15px;
     }
 
     h2{
