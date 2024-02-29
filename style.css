@@ -332,3 +332,57 @@ h2 > img {
     margin-right: 10px;
     margin-bottom: 5px;
 }
+
+img.success{
+    height: 40vh;;
+}
+
+h2.success{
+    text-align: center;
+    border: none;
+}
+
+section.links{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+a.card{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 40px 5px 10px;
+    transition: all .4s;
+}
+
+i{
+    font-size: 40px;
+    font-weight: 100;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+
+div.skill-description > h4{
+    color: #f7941d;
+}
+
+div.skill-item{
+    gap: 10px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.skill-description > h5{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    }
