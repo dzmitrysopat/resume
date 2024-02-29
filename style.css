@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     font-weight: 100;
-    /* outline: 2px solid lightgreen; */
+    outline: 2px solid lightgreen;
 }
 
 html {
@@ -139,12 +139,13 @@ article.buttons > button{
     text-align: center;
     border: 2px solid #383838;
     border-radius: 5px;
-    padding: 5px 25px;
+    padding: 10px 25px;
     color: #fff;
     background-color: #383838;
     font-size: 18px;
     transition: all .4s; 
     width: 50%;
+    height: 50px !important;
 }
 
 section.common-info > article.buttons > a{
@@ -190,9 +191,8 @@ label > span{
 }
 
 input, select, option, textarea, input.form-control{
-    font-size: 18px;
+    font-size: 25px;
     padding: 15px;
-    /* width: clamp(250px 50% 450px); */
     width: 400px;
     border-radius: 8px;
     border: 2px solid #dddddd;
@@ -234,7 +234,7 @@ label.photo:hover{
 }
 
 select > option{
-    font-size: 18px;
+    font-size: 25px;
     border-radius: 15px;
 }
 
@@ -246,6 +246,7 @@ div.years-block{
 
 div.years-block > div > input{
     width: 10vw !important;
+    font-size: 18px;
 }
 
 div.input-block{
@@ -371,6 +372,7 @@ i{
 
 div.skill-description > h4{
     color: #f7941d;
+    /* color: #383838; */
 }
 
 div.skill-item{
