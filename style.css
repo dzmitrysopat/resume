@@ -387,4 +387,10 @@ div.skill-item{
     gap: 10px;
     display: flex;
     align-items: center;
-    }
+}
+
+p.copyright{
+    margin-top: 50px;
+    font-size: 12px;
+    color: #c0c0c0;
+}
