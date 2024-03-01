@@ -433,3 +433,70 @@ p.copyright{
 .dark a.card{
     background-color: #383838;
 }
+
+@media screen and (max-width: 600px){
+    /* main{
+        margin: 50px 25px;
+        gap: 100px;
+    } */
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    ol{
+        display: none;
+    }
+
+    header, form{
+        max-width: 400px;
+    }
+
+    header > a{
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.25;
+        margin-top: 15px;
+    }
+
+    h2{
+        font-size: 2.5rem !important;
+    }
+
+    input, select, option, textarea, input.form-control{
+        width: 90vw;
+    }
+
+
+    input[type=date]{
+        width: 100%;
+    }
+
+    article.buttons{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    article.buttons > a,
+    article.buttons > button{
+        width: 100%;
+    }
+
+    div.checkbox-container > .checkmark {
+        top: 10px;
+    }
+
+    label.photo{
+        width: 100%;
+    }
+
+    div.years-block{
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    div.years-block > div > input{
+        width: 100% !important;
+    }
+}
