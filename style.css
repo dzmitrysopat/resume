@@ -395,3 +395,24 @@ p.copyright{
     font-size: 12px;
     color: #c0c0c0;
 }
+
+/* dark theme */
+.dark body{
+    background-color: #383838;
+}
+
+.dark a,
+.dark label,
+.dark h2,
+.dark i{
+    color: #ddd !important;
+}
+
+.dark span.checkmark{
+    border: 2px solid #ddd;
+}
+
+.dark a.button{
+    background-color: #ddd;
+    color: #383838;
+}
