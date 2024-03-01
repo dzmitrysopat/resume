@@ -53,11 +53,12 @@ header > a{
     line-height: 1.1;
     font-size: 30px;
     transition: all .4s;
+    text-decoration: none !important;
 }
 
 header > a:hover{
     color: #383838;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 header > a > img{
@@ -431,8 +432,4 @@ p.copyright{
 
 .dark a.card{
     background-color: #383838;
-}
-
-{
-    color: #ddd;
 }
