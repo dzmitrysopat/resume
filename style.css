@@ -407,7 +407,9 @@ p.copyright{
 .dark input,
 .dark select,
 .dark textarea,
-.dark input.form-control{
+.dark input.form-control,
+.dark i,
+.dark h5{
     color: #ddd !important;
 }
 
@@ -431,8 +433,6 @@ p.copyright{
     background-color: #383838;
 }
 
-.dark i,
-.dark h5,
-.dark h4{
+{
     color: #ddd;
 }
