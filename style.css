@@ -227,7 +227,7 @@ label.photo:hover{
 }
 
 select > option{
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 15px;
 }
 
@@ -404,7 +404,10 @@ p.copyright{
 .dark a,
 .dark label,
 .dark h2,
-.dark i{
+.dark input,
+.dark select,
+.dark textarea,
+.dark input.form-control{
     color: #ddd !important;
 }
 
@@ -412,7 +415,24 @@ p.copyright{
     border: 2px solid #ddd;
 }
 
-.dark a.button{
+.dark a.button,
+.dark button[type=submit]{
     background-color: #ddd;
-    color: #383838;
+    color: #383838 !important;
+    border: 2px solid #ddd;
+}
+
+.dark button[type=submit]:hover,
+.dark a.button:hover{
+    color: #ddd !important;
+}
+
+.dark a.card{
+    background-color: #383838;
+}
+
+.dark i,
+.dark h5,
+.dark h4{
+    color: #ddd;
 }
