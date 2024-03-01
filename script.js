@@ -1,38 +1,18 @@
 
-// const input_file = document.getElementById("photo");
-// input_file.addEventListener('change', async function(){
-// const file = document.querySelector("#photo").files;
-// console.log("file", file)
-// })
-
-// const input_file = document.getElementById("photo");
-
-// const convert_to_base64 = file => new Promise((response) => {
-//    const file_reader = new FileReader();
-//    file_reader.readAsDataURL(file);
-//    file_reader.onload = () => response(file_reader.result);
-// });
-
-// input_file.addEventListener('change', async function(){
-//    const file = document.querySelector("#photo").files;
-//    const my_image = await convert_to_base64(file[0]);
-//    console.log(my_image, "my_image")
-//    })
-
-   const input_file = document.getElementById("photo");
+const input_file = document.getElementById("photo");
 const input_label = document.getElementById("photoLabel")
 
 const convert_to_base64 = file => new Promise((response) => {
-   const file_reader = new FileReader();
-   file_reader.readAsDataURL(file);
-   file_reader.onload = () => response(file_reader.result);
+const file_reader = new FileReader();
+    file_reader.readAsDataURL(file);
+    file_reader.onload = () => response(file_reader.result);
 });
 
 input_file.addEventListener('change', async function(){
-   const file = document.querySelector("#photo").files;
-   const my_image = await convert_to_base64(file[0]);
-   input_label.style.backgroundImage =`url(${my_image})`
-   })
+    const file = document.querySelector("#photo").files;
+    const my_image = await convert_to_base64(file[0]);
+    input_label.style.backgroundImage =`url(${my_image})`
+})
 
 function nextStep2(){
     document.getElementById("commonInfo").classList.add("hidden");
@@ -40,8 +20,6 @@ function nextStep2(){
     document.getElementById("firstBlock").classList.remove("active");
     document.getElementById("secondBlock").classList.add("active");
 }
-
-
 
 function nextStep3(){
     document.getElementById("contactInfo").classList.add("hidden");
@@ -88,12 +66,6 @@ function prevStep3(){
     document.getElementById("thirdBlock").classList.add("active");
 }
 
-function showSent(){
-    document.getElementById("lastBlock").classList.add("hidden");
-    document.getElementsByTagName("header").classList.add("hidden");
-    document.getElementById("sent").classList.remove("hidden");
-}
-
 document.querySelector('.theme').addEventListener('click', (event) => {
     event.preventDefault();
     if (localStorage.getItem('theme') === 'dark') {
@@ -119,5 +91,4 @@ document.querySelector('.theme').addEventListener('click', (event) => {
     }
     } catch (err) { }
     }
-    
     addDarkClassToHTML();
