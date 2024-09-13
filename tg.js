@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <b>Эл.Почта: </b><a href="mailto:${this.email.value}">${this.email.value}</a>
       <b>Telegram: </b><a href="${this.telegram.value}">${this.telegram.value}</a>
       <b>Instagram: </b><a href="${this.instagram.value}">${this.instagram.value}</a>
-      <b>Учбеное заведение: </b>${this.college.value}
+      <b>Учебное заведение: </b>${this.college.value}
       <b>Уровень образования: </b>${this.education.value}
       <b>Форма обучения: </b>${this.educationType.value}
       <b>Специальность: </b>${this.speciality.value}
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         text: textMessage
       }),
     })
-      .then(() => 'https://dzmitrysopat.github.io/resume/sent.html')
+      .then(() => open('https://dzmitrysopat.github.io/resume/sent.html'))
       .catch(e => console.error(e))
       .finally(() => clearInputs(this.querySelectorAll('input, select, textarea')))
   })
