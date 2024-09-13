@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         text: textMessage
       }),
     })
-      .then(() => alert('Заявка отправлена!'))
+      .then(() => 'https://dzmitrysopat.github.io/resume/sent.html')
       .catch(e => console.error(e))
       .finally(() => clearInputs(this.querySelectorAll('input, select, textarea')))
   })
