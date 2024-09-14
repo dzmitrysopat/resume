@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const TOKEN = '7437568340:AAGGMMdXb_FcoGW__PZ5L858HqjKTU1CKNw'
   const CHAT_ID = '-1002433455867'
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+  const photo_API = `https://api.telegram.org/bot${TOKEN}/sendDocument`
+
   
   function clearInputs(inputs) {
     inputs.forEach((input) => input.value = '')
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const date = new Date().toLocaleString()
 
     const textMessage = `
-      <b>Анкета новобранца | ${date}</b>\n
+      <b>Анкета | ${date}</b>\n
       <b>ФИО: </b>${this.name.value}
       <b>Дата рождения: </b>${this.birth.value}
       <b>Семейное положение: </b>${this.family.value}
