@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const TOKEN = '7437568340:AAGGMMdXb_FcoGW__PZ5L858HqjKTU1CKNw'
   const CHAT_ID = '-1002433455867'
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
-  const photo_API = `https://api.telegram.org/bot${TOKEN}/sendDocument`
+  // const photo_API = `https://api.telegram.org/bot${TOKEN}/sendDocument`
 
   
   function clearInputs(inputs) {
