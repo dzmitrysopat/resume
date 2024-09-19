@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }),
     })
       .then(() => open('./sent.html'))
-      .catch(e => console.error(e))
+      .catch((e) => console.error(e))
       .finally(() => clearInputs(this.querySelectorAll('input, select, textarea')))
   })
 })
