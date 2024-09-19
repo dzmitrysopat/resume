@@ -1,4 +1,3 @@
-
 const input_file = document.getElementById("photo");
 const input_label = document.getElementById("photoLabel")
 

@@ -10,6 +10,7 @@
     <!-- Include Bootstrap CSS and JavaScript -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css">
+    <script src="./tg.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
@@ -27,7 +28,7 @@
         <li class="" id="thirdBlock">Образование</li>
         <li class="" id="lastBlock">Прочее</li>
     </ol>
-    <form method="post" action="https://formsubmit.co/dzmitrysopat@gmail.com" enctype="multipart/form-data">
+    <form method="post" action="" id="telegramForm" enctype="multipart/form-data">
     <section class="common-info block" id="commonInfo">
         <article class="block-name">  
             <!-- <ion-icon name="person-outline"></ion-icon> -->
@@ -232,7 +233,7 @@
 
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/resume/sent.html">
+        <input type="hidden" name="_next" value="./sent.html">
 
         <article class="buttons">
             <a href="#" class="prev-btn button" onclick="prevStep3()">Назад</a>
