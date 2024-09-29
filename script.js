@@ -158,7 +158,6 @@ document.querySelector('.theme').addEventListener('click', (event) => {
             <b>Гражданство: </b>${this.country.value}
             <b>Город: </b>${this.city.value}
             <b>Телефон: </b><a href="tel:${this.tel.value}">${this.tel.value}</a>
-            <b>Эл.Почта: </b><a href="mailto:${this.email.value}">${this.email.value}</a>
             <b>Telegram: </b><a href="${this.telegram.value}">${this.telegram.value}</a>
             <b>Instagram: </b><a href="${this.instagram.value}">${this.instagram.value}</a>
             <b>Учебное заведение: </b>${this.college.value}
