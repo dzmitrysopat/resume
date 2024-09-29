@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <b>О себе: </b><i>${this.about.value}</i>
     `
 
+    
     fetch(URI_API, {
       method: 'POST',
       headers: { 'content-type': 'application/json', },

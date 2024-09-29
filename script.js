@@ -58,7 +58,7 @@ function nextStep4(){
         alert('Забыли указать свою специальность')    
     } else if (document.getElementById("startYear").value > document.getElementById("finishYear").value) {
         alert('Дата окончания превышает дату поступления');
-    } else if (document.getElementById("speciality").value.length == 0){
+    } else if (document.getElementById("diploma").value.length == 0){
         alert('Тема вашей дипломной работы')
     } else{
     document.getElementById("educationInfo").classList.add("hidden");
