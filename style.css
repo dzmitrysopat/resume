@@ -191,6 +191,10 @@ input, select, option, textarea, input.form-control{
     background-color: inherit;
 }
 
+#email{
+    border-color: none;
+}
+
 .ui-datepicker-calendar {
     display: none;
 }

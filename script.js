@@ -29,24 +29,6 @@ function nextStep2(){
     }
 }
 
-const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
-const email = document.getElementById("email");
-
-function isEmailValid(value) {
-    return EMAIL_REGEXP.test(value);
-}
-
-function onInput() {
-  if (isEmailValid(email.value)) {
-    email.style.borderColor = 'green';
-  } else {
-    email.style.borderColor = 'red';
-  }
-}
-
-email.addEventListener('email', onInput);
-
-
 function nextStep3(){
     if (document.getElementById("tel").value.length ==   0) {
         alert('Укажите Телефон для связи');
@@ -60,11 +42,24 @@ function nextStep3(){
 }
 }
 
+// const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+// const email = document.getElementById("email");
+
+// function isEmailValid(value) {
+//     return EMAIL_REGEXP.test(value);
+// }
+
+// function onInput() {
+//   if (isEmailValid(email.value)) {
+//     email.style.borderColor = 'green';
+//   } else {
+//     email.style.borderColor = 'red';
+//   }
+// }
+
+// email.addEventListener('email', onInput);
+
 function nextStep4(){
-    // const startYear = document.getElementById("startYear").value;
-    // const finishYear = document.getElementById("finishYear").value;
-    // console.log(startYear);
-    // console.log(finishYear);
     if (document.getElementById("college").value.length ==   0) {
         alert('Укажите Учебное заведение');
     } else if (document.getElementById("education").value.length == 0){
