@@ -7,24 +7,34 @@ const file_reader = new FileReader();
     file_reader.onload = () => response(file_reader.result);
 });
 
-input_file.addEventListener('change', async function(){
-    const file = document.querySelector("#photo").files;
-    const my_image = await convert_to_base64(file[0]);
-    input_label.style.backgroundImage =`url(${my_image})`
-})
+// input_file.addEventListener('change', async function(){
+//     const file = document.querySelector("#photo").files;
+//     const my_image = await convert_to_base64(file[0]);
+//     input_label.style.backgroundImage =`url(${my_image})`
+// })
+
 
 function nextStep2(){
-    document.getElementById("commonInfo").classList.add("hidden");
-    document.getElementById("contactInfo").classList.remove("hidden");
-    document.getElementById("firstBlock").classList.remove("active");
-    document.getElementById("secondBlock").classList.add("active");
+    if (document.getElementById("name").value.length ==   0) {
+        alert('Укажите Имя');
+    } else if (document.getElementById("birth").value.length == 0){
+        alert('Вы забыли указать дату рождения')
+    } else if (document.getElementById("family").value.length == 0){
+        alert('Укажите семейное положение')
+    } else if (document.getElementById("city").value.length == 0){
+        alert('Забыли город проживания')    
+    }   else{
+        document.getElementById("commonInfo").classList.add("hidden");
+        document.getElementById("contactInfo").classList.remove("hidden");
+    }
 }
+
 
 function nextStep3(){
     document.getElementById("contactInfo").classList.add("hidden");
     document.getElementById("educationInfo").classList.remove("hidden");
-    document.getElementById("secondBlock").classList.remove("active");
-    document.getElementById("thirdBlock").classList.add("active");
+    // document.getElementById("secondBlock").classList.remove("active");
+    // document.getElementById("thirdBlock").classList.add("active");
 }
 
 function nextStep4(){
@@ -37,8 +47,8 @@ function nextStep4(){
     } else{
     document.getElementById("educationInfo").classList.add("hidden");
     document.getElementById("otherInfo").classList.remove("hidden");
-    document.getElementById("thirdBlock").classList.remove("active");
-    document.getElementById("lastBlock").classList.add("active");
+    // document.getElementById("thirdBlock").classList.remove("active");
+    // document.getElementById("lastBlock").classList.add("active");
 }
 }
 
@@ -47,22 +57,22 @@ function nextStep4(){
 function prevStep1(){
     document.getElementById("commonInfo").classList.remove("hidden");
     document.getElementById("contactInfo").classList.add("hidden");
-    document.getElementById("firstBlock").classList.add("active");
-    document.getElementById("secondBlock").classList.remove("active");
+    // document.getElementById("firstBlock").classList.add("active");
+    // document.getElementById("secondBlock").classList.remove("active");
 }
 
 function prevStep2(){
     document.getElementById("educationInfo").classList.add("hidden");
     document.getElementById("contactInfo").classList.remove("hidden");
-    document.getElementById("thirdBlock").classList.remove("active");
-    document.getElementById("secondBlock").classList.add("active");
+    // document.getElementById("thirdBlock").classList.remove("active");
+    // document.getElementById("secondBlock").classList.add("active");
 }
 
 function prevStep3(){
     document.getElementById("otherInfo").classList.add("hidden");
     document.getElementById("educationInfo").classList.remove("hidden");
-    document.getElementById("lastBlock").classList.remove("active");
-    document.getElementById("thirdBlock").classList.add("active");
+    // document.getElementById("lastBlock").classList.remove("active");
+    // document.getElementById("thirdBlock").classList.add("active");
 }
 
 document.querySelector('.theme').addEventListener('click', (event) => {
