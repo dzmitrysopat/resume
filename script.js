@@ -29,6 +29,23 @@ function nextStep2(){
     }
 }
 
+const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+const email = document.getElementById("email");
+
+function isEmailValid(value) {
+    return EMAIL_REGEXP.test(value);
+}
+
+function onInput() {
+  if (isEmailValid(email.value)) {
+    email.style.borderColor = 'green';
+  } else {
+    email.style.borderColor = 'red';
+  }
+}
+
+email.addEventListener('email', onInput);
+
 
 function nextStep3(){
     if (document.getElementById("tel").value.length ==   0) {
