@@ -31,19 +31,35 @@ function nextStep2(){
 
 
 function nextStep3(){
+    if (document.getElementById("tel").value.length ==   0) {
+        alert('Укажите Телефон для связи');
+    } else if (document.getElementById("telegram").value.length == 0){
+        alert('Вы забыли Ваш Telegram')
+    } else if (document.getElementById("instagram").value.length == 0){
+        alert('Укажите Ваш ник в Instagram')
+    }   else{
     document.getElementById("contactInfo").classList.add("hidden");
     document.getElementById("educationInfo").classList.remove("hidden");
-    // document.getElementById("secondBlock").classList.remove("active");
-    // document.getElementById("thirdBlock").classList.add("active");
+}
 }
 
 function nextStep4(){
-    const startYear = document.getElementById("startYear").value;
-    const finishYear = document.getElementById("finishYear").value;
-    console.log(startYear);
-    console.log(finishYear);
-    if (startYear > finishYear) {
+    // const startYear = document.getElementById("startYear").value;
+    // const finishYear = document.getElementById("finishYear").value;
+    // console.log(startYear);
+    // console.log(finishYear);
+    if (document.getElementById("college").value.length ==   0) {
+        alert('Укажите Учебное заведение');
+    } else if (document.getElementById("education").value.length == 0){
+        alert('Вы забыли указать уровень образования')
+    } else if (document.getElementById("educationType").value.length == 0){
+        alert('Укажите форму обучения')
+    } else if (document.getElementById("speciality").value.length == 0){
+        alert('Забыли указать свою специальность')    
+    } else if (document.getElementById("startYear").value > document.getElementById("finishYear").value) {
         alert('Дата окончания превышает дату поступления');
+    } else if (document.getElementById("speciality").value.length == 0){
+        alert('Тема вашей дипломной работы')
     } else{
     document.getElementById("educationInfo").classList.add("hidden");
     document.getElementById("otherInfo").classList.remove("hidden");
