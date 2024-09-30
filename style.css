@@ -345,7 +345,7 @@ h2.success{
 
 section.links{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
 }
 
