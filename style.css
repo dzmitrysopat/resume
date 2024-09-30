@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     font-weight: 100;
-    /* outline: 2px solid lightgreen; */
+    outline: 2px solid lightgreen;
 }
 
 html {
@@ -38,10 +38,11 @@ body{
 header{
     display: flex !important;
     /* flex-direction: row; */
-    gap: 45px;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    margin-left: 10px;
+    /* gap: 45px; */
+    width:fit-content;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-left: 10px; */
 }
 
 header > a{
@@ -62,6 +63,7 @@ header > a:hover{
 }
 
 header > img{
+    cursor: pointer;
     width: 80px;
     /* height: 50px; */
 }
