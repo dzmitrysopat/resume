@@ -38,11 +38,12 @@ body{
 header{
     display: flex !important;
     /* flex-direction: row; */
-    /* gap: 45px; */
+    gap: 45px;
     width:fit-content;
     justify-content: space-around;
     align-items: center;
-    /* margin-left: 10px; */
+    align-self: flex-start;
+    margin-left: 25px;
 }
 
 header > a{

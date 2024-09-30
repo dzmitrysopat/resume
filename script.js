@@ -13,7 +13,6 @@ const file_reader = new FileReader();
 //     input_label.style.backgroundImage =`url(${my_image})`
 // })
 
-
 function nextStep2(){
     if (document.getElementById("name").value.length ==   0) {
         alert('Укажите Имя');
