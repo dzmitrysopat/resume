@@ -42,23 +42,6 @@ function nextStep3(){
 }
 }
 
-// const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
-// const email = document.getElementById("email");
-
-// function isEmailValid(value) {
-//     return EMAIL_REGEXP.test(value);
-// }
-
-// function onInput() {
-//   if (isEmailValid(email.value)) {
-//     email.style.borderColor = 'green';
-//   } else {
-//     email.style.borderColor = 'red';
-//   }
-// }
-
-// email.addEventListener('email', onInput);
-
 function nextStep4(){
     if (document.getElementById("college").value.length ==   0) {
         alert('Укажите Учебное заведение');
@@ -195,7 +178,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
               text: textMessage
             }),
           })
-            .then(() => open('./sent.html'))
+            .then(() => open('./sent.html', '_self'))
             .catch(e => console.error(e))
             .finally(() => clearInputs(this.querySelectorAll('input, select, textarea')))
         }})
