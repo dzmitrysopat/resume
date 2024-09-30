@@ -38,6 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
       <b>О себе: </b><i>${this.about.value}</i>
     `
 
+    if (document.getElementById("languages").value.length ==   0) {
+      alert('Укажите языки');
+  } else if (document.getElementById("skills").value.length == 0){
+      alert('Ваши скиллы для успеха')
+  } else if (document.getElementById("interestings").value.length == 0){
+      alert('Чем заинтересовал проект')
+  } else if (document.getElementById("achievements").value.length == 0){
+      alert('Ваши достижения')    
+  }   else if (document.getElementById("agree").checked == false) {
+    alert('Нам нужно Ваше согласие на обработку получаемых данных')
+  } else  
+  {
     fetch(URI_API, {
       method: 'POST',
       headers: { 'content-type': 'application/json', },
@@ -50,5 +62,5 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(() => open('./sent.html'))
       .catch((e) => console.error(e))
       .finally(() => clearInputs(this.querySelectorAll('input, select, textarea')))
-  })
+  }})
 })

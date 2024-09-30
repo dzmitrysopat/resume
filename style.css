@@ -191,6 +191,10 @@ input, select, option, textarea, input.form-control{
     background-color: inherit;
 }
 
+#email{
+    border-color: none;
+}
+
 .ui-datepicker-calendar {
     display: none;
 }
@@ -221,7 +225,6 @@ label.photo{
 }
 
 label.photo:hover{
-    /* color: #f7941d; */
     border: 2px solid #f7941d;
     cursor: pointer;
 }
