@@ -416,16 +416,19 @@ p.copyright{
 .dark textarea,
 .dark input.form-control,
 .dark i,
-.dark h5{
+.dark h5,
+.dark li{
     color: #ddd !important;
 }
 
-.dark span.checkmark{
+.dark span.checkmark,
+.dark li{
     border: 2px solid #ddd;
 }
 
 .dark a.button,
-.dark button[type=submit]{
+.dark button[type=submit],
+.dark li.active{
     background-color: #ddd;
     color: #383838 !important;
     border: 2px solid #ddd;
