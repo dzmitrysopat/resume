@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     font-weight: 100;
-    /* outline: 2px solid lightgreen; */
+    outline: 2px solid lightgreen;
 }
 
 html {
@@ -273,16 +273,21 @@ div.checkbox-container{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-bottom: 50px;
 }
 
 div.checkbox-container > label{
     cursor: pointer;
+    position: absolute;
+    padding-left: 50px;
+    left: 0;
+    
 }
 
 div.checkbox-container > .checkmark {
     position: absolute;
-    top: 0px;
-    left: 0;
+    top: 10px;
+    left: 0px;
     height: 32px;
     width: 32px;
     border: 2px solid #383838;
@@ -298,7 +303,6 @@ div.checkbox-container:hover input ~ .checkmark{
 .checkbox-container input:checked ~ .checkmark {
     background-color: #383838;
     border: 2px solid #ddd;
-
 }
 
 .checkmark:after {
