@@ -82,7 +82,7 @@ ol{
     -webkit-backdrop-filter: blur(7.3px);
 }
 
-li{
+ol > a{
     border: 2px solid #383838;
     list-style-position: inside;
     list-style: none;
@@ -90,14 +90,23 @@ li{
     border-radius: 5px;
     transition: all .4s;
     cursor: default;
+    color: #383838;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-li.active{
+ol > a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+ol > a.active{
     background-color: #383838;
     padding: 5px 18px;
     color: #fff;
     list-style-position: inside;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 form{
@@ -436,18 +445,18 @@ p.copyright{
 .dark input.form-control,
 .dark i,
 .dark h5,
-.dark li{
+.dark ol > a{
     color: #ddd !important;
 }
 
 .dark span.checkmark,
-.dark li{
+.dark ol > a{
     border: 2px solid #ddd;
 }
 
 .dark a.button,
 .dark button[type=submit],
-.dark li.active{
+.dark ol > a.active{
     background-color: #ddd;
     color: #383838 !important;
     border: 2px solid #ddd;
