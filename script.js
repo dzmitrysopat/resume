@@ -212,13 +212,13 @@ document.querySelector('.theme').addEventListener('click', (event) => {
         if (document.getElementById("languages").value.length ==   0) {
             alert('Укажите языки');
         } else if (document.getElementById("skills").value.length == 0){
-            alert('Ваши скиллы для успеха')
+            alert('Ваши скиллы для успеха');
         } else if (document.getElementById("interestings").value.length == 0){
-            alert('Чем заинтересовал проект')
+            alert('Чем заинтересовал проект');
         } else if (document.getElementById("achievements").value.length == 0){
-            alert('Ваши достижения')    
+            alert('Ваши достижения');
         }   else if (document.getElementById("agree").checked == false) {
-          alert('Нам нужно Ваше согласие на обработку получаемых данных')
+          alert('Нам нужно Ваше согласие на обработку получаемых данных');
         } else  
         {
           fetch(URI_API, {
