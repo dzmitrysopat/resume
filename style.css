@@ -74,6 +74,7 @@ ol{
     align-items: center;
     gap: 5px;
     padding: 15px 0px;
+    margin: 0 !important;
     /* background: rgba(255, 255, 255, 0.36); */
     /* border-radius: 16px; */
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
@@ -123,16 +124,16 @@ h2{
     font-weight: 100;
     border-bottom: 2px solid #ddd;
     width:fit-content;
+    margin: 0 !important;
 }
 
 article.buttons{
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
-article.buttons > a,
-article.buttons > button{
+article.buttons > a{
     text-align: center;
     border: 2px solid #383838;
     border-radius: 5px;
@@ -142,6 +143,20 @@ article.buttons > button{
     font-size: 18px;
     transition: all .4s; 
     width: 50%;
+    height: 50px !important;
+}
+
+article.buttons > button,
+.last-btn{
+    text-align: center;
+    border: 2px solid #383838;
+    border-radius: 5px;
+    padding: 10px 25px;
+    color: #fff;
+    background-color: #383838;
+    font-size: 18px;
+    transition: all .4s; 
+    width: 50% !important;
     height: 50px !important;
 }
 
@@ -281,7 +296,7 @@ div.checkbox-container > label{
     position: absolute;
     padding-left: 50px;
     left: 0;
-    
+    max-width: 400px;
 }
 
 div.checkbox-container > .checkmark {
@@ -489,8 +504,8 @@ p.copyright{
     }
 
     article.buttons{
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        /* gap: 20px; */
         justify-content: space-between;
     }
 
