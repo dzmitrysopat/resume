@@ -205,7 +205,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
             <b>О себе: </b><i>${this.about.value}</i>
           `
       
-          if (document.getElementById("languages").value.length ==   0) {
+        if (document.getElementById("languages").value.length ==   0) {
             alert('Укажите языки');
         } else if (document.getElementById("skills").value.length == 0){
             alert('Ваши скиллы для успеха')
