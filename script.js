@@ -185,9 +185,6 @@ document.querySelector('.theme').addEventListener('click', (event) => {
           event.preventDefault()
           const date = new Date().toLocaleString()
 
-          const formData = new formData();
-        formData.append('chat_id', CHAT_ID);
-        formData.append('photo', this.photo.files[0]);
 
           const textMessage = `
             <b>Анкета | ${date}</b>\n
@@ -199,7 +196,6 @@ document.querySelector('.theme').addEventListener('click', (event) => {
             <b>Телефон: </b><a href="tel:${this.tel.value}">${this.tel.value}</a>
             <b>Telegram: </b><a href="${this.telegram.value}">${this.telegram.value}</a>
             <b>Instagram: </b><a href="${this.instagram.value}">${this.instagram.value}</a>
-            <b>Фотография: </b><a href="${this.photo.value}">${this.photo.value}</a>
             <b>Учебное заведение: </b>${this.college.value}
             <b>Уровень образования: </b>${this.education.value}
             <b>Форма обучения: </b>${this.educationType.value}
@@ -213,7 +209,11 @@ document.querySelector('.theme').addEventListener('click', (event) => {
             <b>Достижения: </b>${this.achievements.value}
             <b>О себе: </b><i>${this.about.value}</i>
           `
-      
+          
+        //   const formData = new formData();
+        //     formData.append('chat_id', CHAT_ID);
+        //     formData.append('photo', this.photo.files[0]);
+
         if (document.getElementById("languages").value.length ==   0) {
             alert('Укажите языки');
         } else if (document.getElementById("skills").value.length == 0){
@@ -226,7 +226,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
           alert('Нам нужно Ваше согласие на обработку получаемых данных');
         } else  
         {
-          fetch(URI_API, formData, {
+          fetch(URI_API, photo_API, {
             method: 'POST',
             headers: { 'content-type': 'application/json', },
             headers: { 'content-type': 'multipart/form-data', },
