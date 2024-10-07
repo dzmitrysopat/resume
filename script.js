@@ -226,21 +226,22 @@ document.querySelector('.theme').addEventListener('click', (event) => {
           alert('Нам нужно Ваше согласие на обработку получаемых данных');
         } else  
         {
-          fetch(URI_API, {
+          fetch(URI_API, formData, {
             method: 'POST',
             headers: { 'content-type': 'application/json', },
+            headers: { 'content-type': 'multipart/form-data', },
             body: JSON.stringify({
               chat_id: CHAT_ID,
               parse_mode: 'html',
-              text: textMessage
+              text: textMessage,
             }),
-          },
-          formData, {
-            headers: { 'content-type': 'multipart/form-data', },
-            chat_id: CHAT_ID,
-            photo: 
-          }
-        )
+          })
+        //   (formData, {
+        //     headers: { 'content-type': 'multipart/form-data', },
+        //     chat_id: CHAT_ID,
+        //     photo: 
+        //   }
+        // )
             .then(() => open('./sent.html', '_self'))
             .catch(e => console.error(e))
             .finally(() => clearInputs(this.querySelectorAll('input, select, textarea')))
