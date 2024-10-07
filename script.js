@@ -7,11 +7,11 @@ const file_reader = new FileReader();
     file_reader.onload = () => response(file_reader.result);
 });
 
-// input_file.addEventListener('change', async function(){
-//     const file = document.querySelector("#photo").files;
-//     const my_image = await convert_to_base64(file[0]);
-//     input_label.style.backgroundImage =`url(${my_image})`
-// })
+input_file.addEventListener('change', async function(){
+    const file = document.querySelector("#photo").files;
+    const my_image = await convert_to_base64(file[0]);
+    input_label.style.backgroundImage =`url(${my_image})`
+})
 
 function nextStep2(){
     if (document.getElementById("name").value.length ==   0) {
@@ -174,7 +174,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
         const TOKEN = '7437568340:AAGGMMdXb_FcoGW__PZ5L858HqjKTU1CKNw'
         const CHAT_ID = '-1002433455867'
         const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
-        // const photo_API = `https://api.telegram.org/bot${TOKEN}/sendDocument`
+        const photo_API = `https://api.telegram.org/bot${TOKEN}/sendPhoto`
       
         
         function clearInputs(inputs) {
@@ -184,7 +184,11 @@ document.querySelector('.theme').addEventListener('click', (event) => {
         document.getElementById('telegramForm').addEventListener('submit', function (event) {
           event.preventDefault()
           const date = new Date().toLocaleString()
-      
+
+          const formData = new formData();
+        formData.append('chat_id', CHAT_ID);
+        formData.append('photo', this.photo.files[0]);
+
           const textMessage = `
             <b>Анкета | ${date}</b>\n
             <b>ФИО: </b>${this.name.value}
@@ -195,6 +199,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
             <b>Телефон: </b><a href="tel:${this.tel.value}">${this.tel.value}</a>
             <b>Telegram: </b><a href="${this.telegram.value}">${this.telegram.value}</a>
             <b>Instagram: </b><a href="${this.instagram.value}">${this.instagram.value}</a>
+            <b>Фотография: </b><a href="${this.photo.value}">${this.photo.value}</a>
             <b>Учебное заведение: </b>${this.college.value}
             <b>Уровень образования: </b>${this.education.value}
             <b>Форма обучения: </b>${this.educationType.value}
@@ -229,7 +234,13 @@ document.querySelector('.theme').addEventListener('click', (event) => {
               parse_mode: 'html',
               text: textMessage
             }),
-          })
+          },
+          formData, {
+            headers: { 'content-type': 'multipart/form-data', },
+            chat_id: CHAT_ID,
+            photo: 
+          }
+        )
             .then(() => open('./sent.html', '_self'))
             .catch(e => console.error(e))
             .finally(() => clearInputs(this.querySelectorAll('input, select, textarea')))

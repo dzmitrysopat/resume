@@ -237,7 +237,7 @@ input[type=file]{
 
 label.photo{
     padding: 15px;
-    height: 55px;
+    height: 200px;
     width: 400px;
     border-radius: 8px;
     border: 2px solid #dddddd;
