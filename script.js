@@ -7,11 +7,11 @@ const file_reader = new FileReader();
     file_reader.onload = () => response(file_reader.result);
 });
 
-input_file.addEventListener('change', async function(){
-    const file = document.querySelector("#photo").files;
-    const my_image = await convert_to_base64(file[0]);
-    input_label.style.backgroundImage =`url(${my_image})`
-})
+// input_file.addEventListener('change', async function(){
+//     const file = document.querySelector("#photo").files;
+//     const my_image = await convert_to_base64(file[0]);
+//     input_label.style.backgroundImage =`url(${my_image})`
+// })
 
 function nextStep2(){
     if (document.getElementById("name").value.length ==   0) {
@@ -174,7 +174,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
         const TOKEN = '7437568340:AAGGMMdXb_FcoGW__PZ5L858HqjKTU1CKNw'
         const CHAT_ID = '-1002433455867'
         const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
-        const photo_API = `https://api.telegram.org/bot${TOKEN}/sendPhoto`
+        // const photo_API = `https://api.telegram.org/bot${TOKEN}/sendPhoto`
       
         
         function clearInputs(inputs) {
@@ -226,22 +226,15 @@ document.querySelector('.theme').addEventListener('click', (event) => {
           alert('Нам нужно Ваше согласие на обработку получаемых данных');
         } else  
         {
-          fetch(URI_API, photo_API, {
+          fetch(URI_API, {
             method: 'POST',
             headers: { 'content-type': 'application/json', },
-            headers: { 'content-type': 'multipart/form-data', },
             body: JSON.stringify({
               chat_id: CHAT_ID,
               parse_mode: 'html',
               text: textMessage,
             }),
           })
-        //   (formData, {
-        //     headers: { 'content-type': 'multipart/form-data', },
-        //     chat_id: CHAT_ID,
-        //     photo: 
-        //   }
-        // )
             .then(() => open('./sent.html', '_self'))
             .catch(e => console.error(e))
             .finally(() => clearInputs(this.querySelectorAll('input, select, textarea')))
