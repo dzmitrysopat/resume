@@ -155,15 +155,28 @@ document.querySelector('.theme').addEventListener('click', (event) => {
     
     function addDarkClassToHTML() {
     const image = document.getElementById("logoImg");
+    const person = document.getElementById("personImg");
+    const contact = document.getElementById("contactImg");
+    const education = document.getElementById("educationImg");
+    const other = document.getElementById("otherImg");
+
     
     try {
             if (localStorage.getItem('theme') === 'dark') {
             document.querySelector('html').classList.add('dark');
             image.src = './img/bulb_sm_white.png';
+            person.src = './img/person-wht.svg';
+            contact.src = './img/contact-wht.svg';
+            education.src = './img/education-wht.svg';
+            other.src = './img/other-wht.svg';
     }
     else {
             document.querySelector('html').classList.remove('dark');
             image.src = './img/bulb_sm.png';
+            person.src = './img/person.svg';
+            contact.src = './img/contact.svg';
+            education.src = './img/education.svg';
+            other.src = './img/other.svg';
     }
     } catch (err) { }
     }

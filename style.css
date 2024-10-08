@@ -357,7 +357,7 @@ div.checkbox-container:hover input ~ .checkmark{
 } */
 
 h2 > img {
-    display: none;
+    /* display: none; */
     margin-right: 10px;
     margin-bottom: 5px;
 }
