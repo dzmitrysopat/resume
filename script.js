@@ -201,11 +201,11 @@ document.querySelector('.theme').addEventListener('click', (event) => {
           const date = new Date().toLocaleString()
 
 
-          const textMessage = `
+        const textMessage = `
             <b>Анкета | ${date}</b>\n
             <b>ФИО: </b>${this.name.value}
-            <b>Дата рождения: </b>${this.birth.value}
             <b>Филиал: </b>${this.branch.value}
+            <b>Дата рождения: </b>${this.birth.value}
             <b>Семейное положение: </b>${this.family.value}
             <b>Гражданство: </b>${this.country.value}
             <b>Город: </b>${this.city.value}
@@ -225,8 +225,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
             <b>Достижения: </b>${this.achievements.value}
             <b>О себе: </b><i>${this.about.value}</i>
             <b>Комментарий СМ: </b>${this.comment.value}
-          `
-          
+        `
         //   const formData = new formData();
         //     formData.append('chat_id', CHAT_ID);
         //     formData.append('photo', this.photo.files[0]);
