@@ -38,7 +38,7 @@ body{
 header{
     display: flex !important;
     /* flex-direction: row; */
-    gap: 30px;
+    gap: 15px;
     width:fit-content;
     justify-content: space-around;
     align-items: center;
@@ -429,6 +429,11 @@ p.copyright{
     margin-top: 50px;
     font-size: 12px;
     color: #c0c0c0;
+}
+
+.comment-block{
+    display: none !important;
+    /* opacity: 0; */
 }
 
 /* dark theme */

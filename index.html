@@ -47,6 +47,24 @@
             </div>
 
             <div class="input-block">
+                <label for="branch">Филиал <span>*</span></label>
+                <select name="branch" id="branch" required>
+                    <option value="" selected disabled>Выберите из списка</option>
+                    <option value="#Аппарат управления">Аппарат управления</option>
+                    <option value="#Гомельские ЭС">Гомельские Электрические сети</option>
+                    <option value="#Гомельские ТС">Гомельские Тепловые сети</option>
+                    <option value="#ТЭЦ2">Гомельская ТЭЦ-2</option>
+                    <option value="#Инженерный центр">Инженерный центр</option>
+                    <option value="#Энергосбыт">Энергосбыт</option>
+                    <option value="#РЭС">Речицкие Электрические сети</option>
+                    <option value="#ЖЭС">Жлобинские Электрические сети</option>
+                    <option value="#СТЭЦ">Светлогорская ТЭЦ</option>
+                    <option value="#МТЭЦ">Мозырская ТЭЦ</option>
+                    <option value="#МЭС">Мозырские Электрические сети</option>
+                </select>
+            </div>
+
+            <div class="input-block">
                 <label for="family">Семейное положение <span>*</span></label>
                 <select name="family" id="family" required>
                     <option value="" selected disabled>Выберите из списка</option>
@@ -229,6 +247,11 @@
             <div class="input-block">
                 <label for="about">Хотите рассказать о себе что-то еще? </label>
                 <textarea name="about" id="about" placeholder="Хобби, увлечения"></textarea>
+            </div>
+
+            <div class="input-block comment-block">
+                <label for="comment">Комментарий от СМ </label>
+                <textarea name="comment" id="comment" placeholder="comment"></textarea>
             </div>
 
             <div class="input-block checkbox-container">

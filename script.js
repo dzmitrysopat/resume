@@ -17,7 +17,9 @@ function nextStep2(){
     if (document.getElementById("name").value.length ==   0) {
         alert('Укажите Имя');
     } else if (document.getElementById("birth").value.length == 0){
-        alert('Вы забыли указать дату рождения')
+        alert('Вы забыли указать, из какого Вы филиала')
+    } else if (document.getElementById("branch").value.length == 0){
+        alert('Укажите семейное положение')
     } else if (document.getElementById("family").value.length == 0){
         alert('Укажите семейное положение')
     } else if (document.getElementById("city").value.length == 0){
@@ -203,6 +205,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
             <b>Анкета | ${date}</b>\n
             <b>ФИО: </b>${this.name.value}
             <b>Дата рождения: </b>${this.birth.value}
+            <b>Филиал: </b>${this.branch.value}
             <b>Семейное положение: </b>${this.family.value}
             <b>Гражданство: </b>${this.country.value}
             <b>Город: </b>${this.city.value}
@@ -221,6 +224,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
             <b>Что заинтересовало: </b>${this.interestings.value}
             <b>Достижения: </b>${this.achievements.value}
             <b>О себе: </b><i>${this.about.value}</i>
+            <b>Комментарий СМ: </b>${this.comment.value}
           `
           
         //   const formData = new formData();
