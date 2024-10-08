@@ -218,8 +218,8 @@ document.querySelector('.theme').addEventListener('click', (event) => {
             alert('Укажите языки');
         } else if (document.getElementById("skills").value.length == 0){
             alert('Ваши скиллы для успеха');
-        } else if (document.getElementById("interestings").value.length == 0){
-            alert('Чем заинтересовал проект');
+        // } else if (document.getElementById("interestings").value.length == 0){
+        //     alert('Чем заинтересовал проект');
         } else if (document.getElementById("achievements").value.length == 0){
             alert('Ваши достижения');
         }   else if (document.getElementById("agree").checked == false) {
